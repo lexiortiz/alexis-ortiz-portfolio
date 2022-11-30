@@ -6,54 +6,81 @@
   Josh Comeau's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-  }
-  * {
+}
+
+* {
     margin: 0;
-  }
-  html, body {
+}
+
+html,
+body {
     height: 100%;
-  }
-  body {
+}
+
+body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
     display: block;
     max-width: 100%;
-  }
-  input, button, textarea, select {
+}
+
+input,
+button,
+textarea,
+select {
     font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     overflow-wrap: break-word;
-  }
-  #root, #__next {
+}
+
+#root,
+#__next {
     isolation: isolate;
-  }
+}
 
 
-  /* ---------- BEGIN HOMEPAGE STYLING ----- */
+/* ---------- BEGIN HOMEPAGE STYLING ----- */
 
-  body {
-    font-family: $fonts; 
+body {
+    font-family: $fonts;
     background-color: $primary-color;
     padding: $spacing;
 
     a:hover {
         cursor: pointer;
     }
-  }
-  
-  header {
+}
+
+header {
     @include flex-between();
+
     #personal-logo {
         border: 2px solid red;
         padding: $spacing;
     }
+
     ul {
         display: flex;
+
         li {
             list-style-type: none;
             padding: 0.3em;
@@ -65,10 +92,17 @@
     min-height: 100vh;
     display: flex;
     justify-content: space-around;
-    padding: $spacing;
-    a p {
-        text-decoration: underline; 
+    padding-top: 5em;
+
+    h1 {
+        font-size: 3em;
     }
+
+    a p {
+        text-decoration: underline;
+        padding-top: $spacing;
+    }
+
     canvas {
         border: 2px solid red;
     }
