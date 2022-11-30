@@ -1,0 +1,110 @@
+/* $radius is the parameter of the function */
+.card {
+  background-color: white;
+  width: 20rem;
+  overflow: hidden;
+  margin: 2rem;
+  box-shadow: 5px 5px 5px 5px #000;
+  border-radius: 0.5rem;
+  /* using the mixins function */
+}
+.card img {
+  height: 15rem;
+  background-size: cover;
+  background-position: center center;
+}
+.card .card_content {
+  padding: 2rem;
+}
+.card .card_title {
+  margin: 0;
+  color: black;
+}
+.card .card_description {
+  margin: 0;
+  color: #999;
+}
+.card_dark {
+  background-color: black;
+}
+.card_dark .card_title {
+  color: white;
+}
+
+/*
+  Josh Comeau's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* ---------- BEGIN HOMEPAGE STYLING ----- */
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+  background-color: #f1ecfb;
+  padding: 2rem;
+}
+body a:hover {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #personal-logo {
+  border: 2px solid red;
+  padding: 2rem;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  list-style-type: none;
+  padding: 0.3em;
+}
+
+#about-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+#about-section a p {
+  text-decoration: underline;
+}
+#about-section canvas {
+  border: 2px solid red;
+}/*# sourceMappingURL=style.css.map */
