@@ -94,19 +94,40 @@ body a:hover {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-size: 1.1em;
+  font-size: 1.1rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 header #personal-logo {
   border: 2px solid red;
   padding: 2rem;
+  grid-area: 1/1/2/3;
+}
+header #main-nav {
+  justify-content: space-between;
+  grid-area: 2/3/3/6;
+}
+header #main-nav ul {
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: -2.3rem;
+}
+header #main-nav ul li {
+  border: 2px solid pink;
+  border-radius: 8px;
+  padding: 1rem;
+}
+header #social-nav {
+  grid-area: 1/5/2/8;
 }
 header ul {
   display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 header ul li {
   list-style-type: none;
-  padding: 0.3em;
 }
 
 main {
@@ -129,7 +150,6 @@ main a {
 }
 #about-section #element-div {
   grid-area: 1/5/2/7;
-  border: 2px solid red;
 }
 #about-section #intro-div {
   grid-area: 2/1/4/4;

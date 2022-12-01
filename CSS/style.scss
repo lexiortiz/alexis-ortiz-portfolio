@@ -71,20 +71,43 @@ body {
 }
 
 header {
-    @include flex-between();
-    font-size: 1.1em;
+    @include flex-center();
+    font-size: 1.1rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 
     #personal-logo {
         border: 2px solid red;
         padding: $spacing;
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    #main-nav {
+        justify-content: space-between;
+        grid-area: 2 / 3 / 3 / 6;
+
+        ul {
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-left: -2.3rem;
+
+            li {
+                @include nav-button();
+                padding: 1rem;
+            }
+        }
+    }
+    #social-nav {
+        grid-area: 1 / 5 / 2 / 8;
     }
 
     ul {
         display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
 
         li {
             list-style-type: none;
-            padding: 0.3em;
         }
     }
 }
@@ -110,7 +133,6 @@ main {
     }
     #element-div { 
         grid-area: 1 / 5 / 2 / 7;
-        border: 2px solid red;
     }
     #intro-div { 
         grid-area: 2 / 1 / 4 / 4; 
