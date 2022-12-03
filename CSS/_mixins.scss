@@ -4,11 +4,8 @@
 }
 
 @mixin nav-button {
-    border: 2px solid pink;
-    border-radius: 8px;
+    padding: $spacing;
 }
-
-/* $radius is the parameter of the function */
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
@@ -16,3 +13,10 @@
     border-radius: $radius;
 }
 
+@mixin background-gradient {
+    background-color: $snow-white;
+    background-image: linear-gradient(to bottom, $snow-white 20%, $cotton-candy 55%);
+    background-size: 100%;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}

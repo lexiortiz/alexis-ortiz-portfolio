@@ -1,9 +1,10 @@
 .card {
-    background-color: white;
+    background-color: $snow-white;
     overflow: hidden;
-    /* margin: auto; */
-    box-shadow: 5px 5px 5px 2px #333;
-    @include border-radius(0.5rem); /* using the mixins function */
+    margin: auto;
+    box-shadow: 5px 5px 6px 2px $cotton-candy;
+    @include border-radius(0.5rem);
+    padding: 8rem;
     
     img {
         background-size: cover;
@@ -17,7 +18,7 @@
 
     .card_description {
         margin: 0;
-        color: $dark-grey;
+        color: $primary-black;
     }
 
     &_dark {

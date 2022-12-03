@@ -1,5 +1,22 @@
 
-$fonts: 'Poppins', Helvetica, sans-serif;
-$primary-color: #f1ecfb;
+// Variables to use in the style.scss file.
+// Typography
+$fonts: 'Cabin', 'Roboto', sans-serif;
+// Neutral Colors
+$primary-white: #fff;
+$primary-black: #0b090a;
+$honeydew-white: #f0faef;
+$smokey-black: #161214;
+$raisin-black: #2D2529;
+// Main Colors
+$rose-pink: #F57AD6;
+$royal-blue-light: #496DDB;
+$mantis-green: #76D671;
+// Pink Colors
+$snow-white: #F1EAEC;
+$cotton-candy: #F3BAE3;
+$middle-purple: #E07AC5;
+$sky-magenta: #D964BB;
+$fandango: #BF0D92;
+// Formatting
 $spacing: 2rem;
-$dark-grey: rgb(11, 11, 11);

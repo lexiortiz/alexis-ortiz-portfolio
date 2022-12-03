@@ -1,11 +1,10 @@
-/* $radius is the parameter of the function */
 .card {
-  background-color: white;
+  background-color: #F1EAEC;
   overflow: hidden;
-  /* margin: auto; */
-  box-shadow: 5px 5px 5px 2px #333;
+  margin: auto;
+  box-shadow: 5px 5px 6px 2px #F3BAE3;
   border-radius: 0.5rem;
-  /* using the mixins function */
+  padding: 8rem;
 }
 .card img {
   background-size: cover;
@@ -17,7 +16,7 @@
 }
 .card .card_description {
   margin: 0;
-  color: rgb(11, 11, 11);
+  color: #0b090a;
 }
 .card_dark {
   background-color: black;
@@ -82,52 +81,85 @@ h6 {
 }
 
 /* ---------- BEGIN HOMEPAGE STYLING ----- */
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: "Poppins", Helvetica, sans-serif;
-  background-color: #f1ecfb;
+  font-family: "Cabin", "Roboto", sans-serif;
+  font-size: 1.6rem;
+  background-color: #F1EAEC;
+  background-image: linear-gradient(to bottom, #F1EAEC 20%, #F3BAE3 55%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 2rem;
 }
 body a:hover {
   cursor: pointer;
 }
 
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(to bottom, #F1EAEC 20%, #F3BAE3 55%);
+}
+
 header {
-  display: flex;
-  align-items: center;
-  font-size: 1.1rem;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  font-size: 2rem;
 }
 header #personal-logo {
-  border: 2px solid red;
-  padding: 2rem;
-  grid-area: 1/1/2/3;
+  grid-area: 1/1/2/4;
+  font-size: 2.8rem;
+  background: linear-gradient(#161214, #2D2529 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header #personal-logo a:hover {
+  background: linear-gradient(#D964BB 10%, #BF0D92 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 header #main-nav {
-  justify-content: space-between;
   grid-area: 2/3/3/6;
 }
 header #main-nav ul {
-  justify-content: space-around;
-  align-items: flex-start;
-  margin-left: -2.3rem;
+  padding: 0;
 }
 header #main-nav ul li {
-  border: 2px solid pink;
-  border-radius: 8px;
-  padding: 1rem;
+  padding: 2rem;
+  font-size: 1.8rem;
+}
+header #main-nav ul li:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #2D2529;
+          text-decoration-color: #2D2529;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
 }
 header #social-nav {
-  grid-area: 1/5/2/8;
+  color: #161214;
+  grid-area: 1/6/2/8;
 }
 header ul {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0;
 }
 header ul li {
   list-style-type: none;
+}
+header ul li:hover {
+  color: #BF0D92;
 }
 
 main {
@@ -144,16 +176,21 @@ main a {
   grid-template-rows: 20% repeat(2, 1fr);
 }
 #about-section #h1-div {
-  grid-area: 1/1/2/5;
-  font-size: 1.75em;
+  grid-area: 1/1/2/7;
   margin-top: 1em;
+}
+#about-section #h1-div h1 {
+  font-size: 6rem;
 }
 #about-section #element-div {
   grid-area: 1/5/2/7;
 }
 #about-section #intro-div {
   grid-area: 2/1/4/4;
-  font-size: 1em;
+  padding-right: 1rem;
+}
+#about-section #read-more {
+  padding: 3rem 0;
 }
 #about-section #canvas-div {
   grid-area: 2/4/4/7;
@@ -161,21 +198,29 @@ main a {
 }
 
 #work-section {
-  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 20% 1fr;
+  justify-content: space-evenly;
+  padding: 3rem 0;
+  min-height: 100vh;
+  align-items: center;
 }
 #work-section #work-sect-title {
   padding-top: 2rem;
   grid-area: 1/1/2/7;
 }
-#work-section #p1-container {
+#work-section #project1-container {
   grid-area: 2/1/3/3;
 }
-#work-section #p2-container {
+#work-section #project2-container {
   grid-area: 2/3/3/5;
 }
-#work-section #p3-container {
+#work-section #project3-container {
   grid-area: 2/5/3/7;
+}
+
+#contact-section {
+  padding: 9rem 0;
+  min-height: 100vh;
 }/*# sourceMappingURL=style.css.map */
