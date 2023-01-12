@@ -112,25 +112,10 @@ html {
 body {
   font-family: "Cabin", "Roboto", sans-serif;
   font-size: 1.6rem;
-  background-color: #F1EAEC;
-  background-image: linear-gradient(to bottom, #F1EAEC 20%, #F2DEEA 55%);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   padding: 2rem;
 }
 body a:hover {
   cursor: pointer;
-}
-
-body:before {
-  content: "";
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: -1;
-  background: linear-gradient(to bottom, #F1EAEC 20%, #F2DEEA 55%);
 }
 
 header {
