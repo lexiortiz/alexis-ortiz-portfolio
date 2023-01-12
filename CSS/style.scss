@@ -11,6 +11,8 @@ body {
   font-family: $fonts;
   font-size: 1.6rem;
   padding: $spacing;
+  background-color: $xiketic;
+  color: $cultured;
   a:hover {
     cursor: pointer;
   }
@@ -21,6 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-size: 2.3rem;
+  color: $cultured;
 
   #personal-logo {
     font-size: 1.6rem;
@@ -29,31 +32,23 @@ header {
 
   ul {
     padding: 0;
-
     li {
       list-style-type: none;
     }
     li:hover {
-      color: $fandango;
+      color: $heliotrope;
+      text-decoration: underline;
     }
   }
 
   #main-nav {
     float: right;
-
-    li:hover {
-      text-decoration: underline;
-      text-decoration-color: $raisin-black;
-      text-decoration-style: wavy;
-    }
   }
 
   #social-nav {
     display: flex;
     align-items: center;
     font-size: 2.6rem;
-
-    color: $smokey-black;
     li {
       padding: 8px;
     }
@@ -75,6 +70,7 @@ main {
   grid-template-rows: 20% repeat(2, 1fr);
 
   #h1-div {
+    //font-family: $heading-font;
     grid-area: 1 / 1 / 2 / 7;
     margin-top: 1em;
     h1 {
