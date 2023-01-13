@@ -1,118 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Alexis Ortiz Portfolio</title>
-        <link rel="stylesheet" href="css/style.css"/>
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@1,500;1,600&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <!-- FontAwesome Icons -->
-        <script src="https://kit.fontawesome.com/a45d9f595b.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <div id="personal-logo">
-                <h1><a>ALEXIS ORTIZ</a></h1>
-                <nav>
-                    <ul id="social-nav">
-                        <a><li><i class="fa-brands fa-square-github"></i></li></a>
-                        <a><li><i class="fa-brands fa-linkedin"></i></li></a>
-                        <a><li><i class="fa-solid fa-file-lines"></i></li></a>
-                        <a><li><i class="fa-solid fa-file"></i></li></a>
-                    </ul>
-                </nav>
-            </div>
-            <nav>
-                <ul id="main-nav">
-                    <a><li>ABOUT</li></a>
-                    <a><li>WORK</li></a>
-                    <a><li>CONTACT</li></a>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="about-section">
-                <div id="h1-div">
-                    <h1>Front End Developer</h1>
-                </div>
-                <div id="element-div">
-                </div>
-                <div id="intro-div">
-                    <p>Dignissim diam quis enim lobortis scelerisque. Vivamus arcu felis bibendum ut tristique et egestas. Lectus nulla at volutpat diam ut venenatis tellus. Eu augue ut lectus arcu. Sagittis nisl rhoncus mattis rhoncus urna neque. Interdum velit laoreet id donec ultrices tincidunt arcu. Fusce ut placerat orci nulla pellentesque dignissim enim sit. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Massa tempor nec feugiat nisl pretium fusce. Euismod elementum nisi quis eleifend quam adipiscing vitae proin.</p>
-                    <a><p id="read-more">Read more.</p></a>
-                </div>
-                <div id="canvas-div">
-                    <canvas></canvas>
-                </div>
-            </section>
-            <section id="work-section">
-                <h2 id="work-sect-title">WORK</h2>
-                <div class="cards">
-                    <div id="project1-container" class="card">
-                        <h3 class="card_title">Project One</h3>
-                        <figure>
-                            <img src="https://images.unsplash.com/photo-1579547621700-03c2c337370a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=678&q=80" alt="Placeholder photo of a blend of colors." width="150px" height="150px">
-                            <figcaption>Screenshot of project one.
-                            </figcaption>
-                            <p class="card_description">Project about something or another.</p>
-                        </figure>
-                        <button>Project Details</button>
-                    </div>
-                    <div id="project2-container" class="card">
-                        <h3 class="card_title">Project Two</h3>
-                        <figure>
-                            <img src="https://images.unsplash.com/photo-1579547621700-03c2c337370a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=678&q=80" alt="Placeholder photo of a blend of colors." width="150px" height="150px">
-                            <figcaption>Screenshot of project two.
-                            </figcaption>
-                            <p class="card_description">Project about something or another.</p>
-                        </figure>
-                        <button>Project Details</button>
-                    </div>
-                    <div id="project3-container" class="card">
-                        <h3 class="card_title">Project Three</h3>
-                        <figure>
-                            <img src="https://images.unsplash.com/photo-1579547621700-03c2c337370a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=678&q=80" alt="Placeholder photo of a blend of colors." width="150px" height="150px">
-                            <figcaption>Screenshot of project three.
-                            </figcaption>
-                            <p class="card_description">Project about something or another #3.</p>
-                        </figure>
-                        <button>Project Details</button>
-                    </div>
-                </div>
-            </section>
-            <section id="contact-section">
-                <h2>CONTACT</h2>
-                <div id="contact-div">
-                    <p>Contact me to discuss working together.</p>
-                    <button>Phone Number</button>
-                    <button>Telegram</button>
-                </div>
-                <br>
-                <div id="form-div">
-                    <form id="contact-form">
-                        <h3>Form Title</h3>
-                        <label for="fullname">Full name:</label>
-                        <br>
-                        <input type="text" id="fullname" name="fullname" value="Jane Doe">
-                        <br>
-                        <label for="email">Email:</label>
-                        <br>
-                        <input type="email" id="email" name="email" value="jane@gmail.com">
-                        <br>
-                        <label for="message">Message:</label>
-                        <br>
-                        <textarea id="message" name="message" rows="4" cols="50">I'm reaching out to discuss a potential collaboration with you on this open-source project I am working on.
-                        </textarea>
-                        <br>
-                        <br>
-                        <input type="submit" value="Send">
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>Designed + Developed by Alexis Ortiz</p>
-        </footer>
-    </body>
+  <head>
+    <title>Alexis Ortiz Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/a45d9f595b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="personal-logo">
+        <h1><a>ALEXIS ORTIZ</a></h1>
+        <nav>
+          <ul id="social-nav">
+            <a
+              ><li><i class="fa-brands fa-square-github"></i></li
+            ></a>
+            <a
+              ><li><i class="fa-brands fa-linkedin"></i></li
+            ></a>
+            <a
+              ><li><i class="fa-solid fa-file-lines"></i></li
+            ></a>
+            <a
+              ><li><i class="fa-solid fa-file"></i></li
+            ></a>
+          </ul>
+        </nav>
+      </div>
+      <nav>
+        <ul id="main-nav">
+          <a><li>ABOUT</li></a>
+          <a><li>WORK</li></a>
+          <a><li>CONTACT</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about-section">
+        <div id="h1-div">
+          <h1>Front End Developer</h1>
+          <div id="element-div">✧</div>
+        </div>
+        <div id="intro-div">
+          <p>
+            Dignissim diam quis enim lobortis scelerisque. Vivamus arcu felis
+            bibendum ut tristique et egestas. Lectus nulla at volutpat diam ut
+            venenatis tellus. Eu augue ut lectus arcu. Sagittis nisl rhoncus
+            mattis rhoncus urna neque. Interdum velit laoreet id donec ultrices
+            tincidunt arcu. Fusce ut placerat orci nulla pellentesque dignissim
+            enim sit. Ac orci phasellus egestas tellus rutrum tellus
+            pellentesque eu tincidunt. Massa tempor nec feugiat nisl pretium
+            fusce. Euismod elementum nisi quis eleifend quam adipiscing vitae
+            proin.
+          </p>
+          <a><p id="read-more">Read more.</p></a>
+        </div>
+        <div id="canvas-div">
+          <canvas></canvas>
+        </div>
+      </section>
+      <section id="work-section">
+        <h2 id="work-sect-title">WORK</h2>
+        <div class="cards">
+          <div id="project1-container" class="card">
+            <h3 class="card_title">Project One</h3>
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1579547621700-03c2c337370a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=678&q=80"
+                alt="Placeholder photo of a blend of colors."
+                width="150px"
+                height="150px"
+              />
+              <figcaption>Screenshot of project one.</figcaption>
+              <p class="card_description">
+                Project about something or another.
+              </p>
+            </figure>
+            <button>Project Details</button>
+          </div>
+          <div id="project2-container" class="card">
+            <h3 class="card_title">Project Two</h3>
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1579547621700-03c2c337370a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=678&q=80"
+                alt="Placeholder photo of a blend of colors."
+                width="150px"
+                height="150px"
+              />
+              <figcaption>Screenshot of project two.</figcaption>
+              <p class="card_description">
+                Project about something or another.
+              </p>
+            </figure>
+            <button>Project Details</button>
+          </div>
+          <div id="project3-container" class="card">
+            <h3 class="card_title">Project Three</h3>
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1579547621700-03c2c337370a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=678&q=80"
+                alt="Placeholder photo of a blend of colors."
+                width="150px"
+                height="150px"
+              />
+              <figcaption>Screenshot of project three.</figcaption>
+              <p class="card_description">
+                Project about something or another #3.
+              </p>
+            </figure>
+            <button>Project Details</button>
+          </div>
+        </div>
+      </section>
+      <section id="contact-section">
+        <h2>CONTACT</h2>
+        <div id="contact-div">
+          <p>Contact me to discuss working together.</p>
+          <button>Phone Number</button>
+          <button>Telegram</button>
+        </div>
+        <br />
+        <div id="form-div">
+          <form id="contact-form">
+            <h3>Form Title</h3>
+            <label for="fullname">Full name:</label>
+            <br />
+            <input type="text" id="fullname" name="fullname" value="Jane Doe" />
+            <br />
+            <label for="email">Email:</label>
+            <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="jane@gmail.com"
+            />
+            <br />
+            <label for="message">Message:</label>
+            <br />
+            <textarea id="message" name="message" rows="4" cols="50">
+I'm reaching out to discuss a potential collaboration with you on this open-source project I am working on.
+                        </textarea
+            >
+            <br />
+            <br />
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Designed + Developed by Alexis Ortiz</p>
+    </footer>
+  </body>
 </html>

@@ -71,31 +71,31 @@ main {
 
 #about-section {
   min-height: 99vh;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 20% repeat(2, 1fr);
 
   #h1-div {
-    //font-family: $heading-font;
-    grid-area: 1 / 1 / 2 / 7;
-    margin-top: 1em;
+    display: flex;
+    align-items: center;
+
     h1 {
-      font-size: 6rem;
+      font-size: 8rem;
+      font-family: $heading-font;
+      letter-spacing: $letter-spacing;
+      margin-top: 2rem;
+    }
+    #element-div {
+      padding: 1rem;
+      font-size: 4rem;
+      color: orange;
     }
   }
-  #element-div {
-    grid-area: 1 / 5 / 2 / 7;
-  }
   #intro-div {
-    grid-area: 2 / 1 / 4 / 4;
-    padding-right: 1rem;
+    font-size: 1.8rem;
   }
   #read-more {
     padding: 3rem 0;
   }
   #canvas-div {
-    grid-area: 2 / 4 / 4 / 7;
-    border: 2px solid red;
+    border: 2px solid $heliotrope;
   }
 }
 
