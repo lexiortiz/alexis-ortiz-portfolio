@@ -1,6 +1,5 @@
 @import "variables";
 @import "mixins";
-@import "card";
 @import "reset";
 
 html {
@@ -75,12 +74,12 @@ main {
   #h1-div {
     display: flex;
     align-items: center;
+    margin-top: 3rem;
 
     h1 {
       font-size: 8rem;
       font-family: $heading-font;
       letter-spacing: $letter-spacing;
-      margin-top: 2rem;
     }
     #element-div {
       padding: 1rem;
@@ -97,38 +96,61 @@ main {
 }
 
 #work-section {
-  /* display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 20% 1fr;
-    justify-content: space-evenly;
-    padding: 3rem 0;
-    min-height: 100vh;
-    align-items: center; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  min-height: 99vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // align-items: center;
+  padding-top: 1rem;
+  //border: 1px solid $heliotrope;
 
   #work-sect-title {
-    padding-top: $spacing;
+    font-family: $heading-font;
+    font-size: 6rem;
+  }
+
+  #work-desc {
+    padding-top: 1rem;
   }
 
   .cards {
     width: 100%;
+    margin-top: 6rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+    flex-direction: column;
 
-  #project1-container {
-  }
-  #project2-container {
-  }
-  #project3-container {
+    .card {
+      border-top: 1.5px solid gray;
+      border-bottom: 1.5px solid gray;
+      padding: 2rem 0;
+
+      .project-header {
+        // float: right;
+        // text-align: right;
+
+        .card-title {
+          font-family: $heading-font;
+          font-size: 3.8rem;
+        }
+
+        .card-description {
+          margin-bottom: 2rem;
+        }
+      }
+
+      .project-link {
+        .project-img {
+          margin: 1rem 0;
+        }
+        .project-img:hover {
+          border: 1rem solid $heliotrope;
+        }
+      }
+    }
   }
 }
 
 #contact-section {
   padding: 9rem 0;
-  min-height: 100vh;
+  min-height: 99vh;
 }
