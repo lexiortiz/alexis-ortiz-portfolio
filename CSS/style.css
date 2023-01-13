@@ -157,7 +157,6 @@ main a {
 }
 #work-section .cards .card {
   border-top: 1.5px solid gray;
-  border-bottom: 1.5px solid gray;
   padding: 2rem 0;
 }
 #work-section .cards .card .project-header .card-title {
@@ -171,10 +170,20 @@ main a {
   margin: 1rem 0;
 }
 #work-section .cards .card .project-link .project-img:hover {
-  border: 1rem solid #D285FE;
+  border: 1rem solid orange;
+}
+#work-section .cards #project3-container {
+  border-bottom: 1.5px solid gray;
 }
 
 #contact-section {
-  padding: 9rem 0;
   min-height: 99vh;
+  padding-top: 2rem;
+}
+#contact-section #contact-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 6rem;
+}
+#contact-section #form-div {
+  padding: 1rem 0;
 }/*# sourceMappingURL=style.css.map */
