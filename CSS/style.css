@@ -127,10 +127,6 @@ header {
   font-size: 2.3rem;
   color: #F8F6F4;
 }
-header #personal-logo {
-  font-size: 1.6rem;
-  float: left;
-}
 header ul {
   padding: 0;
 }
@@ -141,16 +137,25 @@ header ul li:hover {
   color: #D285FE;
   text-decoration: underline;
 }
-header #main-nav {
-  float: right;
+header #personal-logo {
+  font-size: 1.6rem;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-header #social-nav {
+header #personal-logo #social-nav {
   display: flex;
   align-items: center;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
+  float: left;
 }
-header #social-nav li {
+header #personal-logo #social-nav li {
   padding: 8px;
+}
+header #main-nav {
+  float: right;
 }
 
 main {

@@ -25,11 +25,6 @@ header {
   font-size: 2.3rem;
   color: $cultured;
 
-  #personal-logo {
-    font-size: 1.6rem;
-    float: left;
-  }
-
   ul {
     padding: 0;
     li {
@@ -41,17 +36,28 @@ header {
     }
   }
 
-  #main-nav {
-    float: right;
+  #personal-logo {
+    font-size: 1.6rem;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    #social-nav {
+      display: flex;
+      align-items: center;
+      font-size: 2.4rem;
+      float: left;
+
+      li {
+        padding: 8px;
+      }
+    }
   }
 
-  #social-nav {
-    display: flex;
-    align-items: center;
-    font-size: 2.6rem;
-    li {
-      padding: 8px;
-    }
+  #main-nav {
+    float: right;
   }
 }
 
