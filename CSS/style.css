@@ -70,7 +70,12 @@ body a:hover {
 header {
   color: #F8F6F4;
   padding: 3rem;
-  background-image: linear-gradient(175deg, hsl(273deg, 19%, 9%) 0%, hsl(278deg, 18%, 9%) 50%, hsl(274deg, 17%, 8%) 100%);
+  /*background-image: linear-gradient(
+    175deg,
+    hsl(273deg 19% 9%) 0%,
+    hsl(278deg 18% 9%) 50%,
+    hsl(274deg 17% 8%) 100%
+  ); */
 }
 header #top-nav {
   display: flex;
@@ -85,20 +90,16 @@ header #top-nav ul li {
   list-style-type: none;
 }
 header #top-nav ul li:hover {
-  color: #D285FE;
+  color: rgb(210, 133, 254);
   text-decoration: underline;
 }
 header #top-nav #personal-logo {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 500;
   float: left;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 header #top-nav #personal-logo #logo-text:hover {
-  color: #D285FE;
+  color: rgb(210, 133, 254);
 }
 header #top-nav #personal-logo #social-nav {
   display: flex;
@@ -111,17 +112,24 @@ header #top-nav #personal-logo #social-nav li {
   padding: 1rem;
   text-align: center;
 }
+header #top-nav #personal-logo #social-nav #first-list-item {
+  padding: 0;
+}
 header #top-nav #personal-logo #social-nav li:hover {
   border: 2px solid #FFFDFB;
   border-radius: 50%;
   text-decoration: none;
 }
 header #top-nav #sensory-canvas {
-  border: 2px solid #D285FE;
-  border-radius: 8px;
+  border-radius: 16px;
+}
+header #top-nav #sensory-canvas canvas {
+  display: block;
+  border-radius: 1rem;
 }
 header #top-nav #main-nav {
   float: right;
+  text-align: right;
 }
 
 main {
