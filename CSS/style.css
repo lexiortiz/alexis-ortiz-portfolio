@@ -55,6 +55,7 @@ h6 {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,12 +63,15 @@ body {
   font-size: 1.6rem;
   background-color: #151118;
   color: #F8F6F4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 body a:hover {
   cursor: pointer;
 }
 
 header {
+  min-height: 99vh;
   color: #F8F6F4;
   padding: 3rem;
   /*background-image: linear-gradient(
@@ -97,6 +101,10 @@ header #top-nav #personal-logo {
   font-size: 2.6rem;
   font-weight: 500;
   float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 header #top-nav #personal-logo #logo-text:hover {
   color: rgb(210, 133, 254);
@@ -111,9 +119,6 @@ header #top-nav #personal-logo #social-nav {
 header #top-nav #personal-logo #social-nav li {
   padding: 1rem;
   text-align: center;
-}
-header #top-nav #personal-logo #social-nav #first-list-item {
-  padding: 0;
 }
 header #top-nav #personal-logo #social-nav li:hover {
   border: 2px solid #FFFDFB;
