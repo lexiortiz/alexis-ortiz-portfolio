@@ -61,7 +61,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  background-color: #151118;
+  background-color: rgb(21, 17, 24);
   color: #F8F6F4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -74,12 +74,10 @@ header {
   min-height: 99vh;
   color: #F8F6F4;
   padding: 3rem;
-  /*background-image: linear-gradient(
-    175deg,
-    hsl(273deg 19% 9%) 0%,
-    hsl(278deg 18% 9%) 50%,
-    hsl(274deg 17% 8%) 100%
-  ); */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3ClinearGradient gradientTransform='rotate(150, 0.5, 0.5)' x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='ffflux-gradient'%3E%3Cstop stop-color='hsl(252, 59%25, 46%25)' stop-opacity='1' offset='0%25'%3E%3C/stop%3E%3Cstop stop-color='hsl(0, 0%25, 0%25)' stop-opacity='1' offset='100%25'%3E%3C/stop%3E%3C/linearGradient%3E%3Cfilter id='ffflux-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.004 0.004' numOctaves='1' seed='309' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeGaussianBlur stdDeviation='46 89' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' edgeMode='duplicate' result='blur'%3E%3C/feGaussianBlur%3E%3CfeBlend mode='color-burn' x='0%25' y='0%25' width='100%25' height='100%25' in='SourceGraphic' in2='blur' result='blend'%3E%3C/feBlend%3E%3CfeColorMatrix type='saturate' values='3' x='0%25' y='0%25' width='100%25' height='100%25' in='blend' result='colormatrix'%3E%3C/feColorMatrix%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='url(%23ffflux-gradient)' filter='url(%23ffflux-filter)'%3E%3C/rect%3E%3C/svg%3E");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 header #top-nav {
   display: flex;
@@ -94,7 +92,7 @@ header #top-nav ul li {
   list-style-type: none;
 }
 header #top-nav ul li:hover {
-  color: rgb(210, 133, 254);
+  color: #d285fe;
   text-decoration: underline;
 }
 header #top-nav #personal-logo {
@@ -107,7 +105,7 @@ header #top-nav #personal-logo {
   justify-content: center;
 }
 header #top-nav #personal-logo #logo-text:hover {
-  color: rgb(210, 133, 254);
+  color: #d285fe;
 }
 header #top-nav #personal-logo #social-nav {
   display: flex;
