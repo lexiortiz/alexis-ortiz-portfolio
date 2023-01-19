@@ -10,7 +10,6 @@ html {
 body {
   font-family: $fonts;
   font-size: 1.6rem;
-  //padding: $spacing;
   background-color: $xiketic;
   color: $cultured;
   -webkit-font-smoothing: antialiased;
@@ -43,7 +42,7 @@ header {
         list-style-type: none;
       }
       li:hover {
-        color: $heliotrope;
+        font-weight: 600;
       }
     }
 
@@ -85,19 +84,35 @@ header {
   }
 
   #hero-intro {
-    
+    margin-top: 6rem;
+
     #name-text {
-      margin-top: 6rem;
-      text-align: left;
-      font-size: 16rem;
+      text-align: center;
+      font-size: clamp(4rem, 65vmin, 15rem);
+      --bg-size: 400%;
+      --color-one: hsl(248, 90%, 55%);
+      --color-two: rgb(180, 31, 249);
+      --color-three: hsl(301, 95%, 35%);
+      background: linear-gradient(
+          140deg,
+          var(--color-one),
+          var(--color-two),
+          // var(--color-three),
+          var(--color-one)
+        ) 0 0 / var(--bg-size) 100%;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
       letter-spacing: 9px;
-      font-family: "Balgin-BlackSmCondensed";
-        src: url("Balgin-BlackSmCondensed.ttf");
+      // font-family: "Balgin-BlackSmCondensed";
+      //   src: url("Balgin-BlackSmCondensed.ttf");
+      font-family: $fonts;
     }
     #intro-desc {
       font-size: 3rem;
-      margin-top: -6rem;
+      margin-top: -4rem;
       letter-spacing: -1px;
+      text-align: center;
     }
   }
 

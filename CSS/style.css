@@ -90,7 +90,7 @@ header #top-nav ul li {
   list-style-type: none;
 }
 header #top-nav ul li:hover {
-  color: #AE4EF9;
+  font-weight: 600;
 }
 header #top-nav #top-nav-div {
   font-size: 2.6rem;
@@ -120,18 +120,28 @@ header #top-nav .top-nav-line {
   margin-right: -3rem;
   margin-left: 1rem;
 }
-header #hero-intro #name-text {
+header #hero-intro {
   margin-top: 6rem;
-  text-align: left;
-  font-size: 16rem;
+}
+header #hero-intro #name-text {
+  text-align: center;
+  font-size: clamp(4rem, 65vmin, 15rem);
+  --bg-size: 400%;
+  --color-one: hsl(248, 90%, 55%);
+  --color-two: rgb(180, 31, 249);
+  --color-three: hsl(301, 95%, 35%);
+  background: linear-gradient(140deg, var(--color-one), var(--color-two), var(--color-one)) 0 0/var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   letter-spacing: 9px;
-  font-family: "Balgin-BlackSmCondensed";
-  src: url("Balgin-BlackSmCondensed.ttf");
+  font-family: "Montserrat", sans-serif;
 }
 header #hero-intro #intro-desc {
   font-size: 3rem;
-  margin-top: -6rem;
+  margin-top: -4rem;
   letter-spacing: -1px;
+  text-align: center;
 }
 header #bottom-nav ul {
   padding: 0;
