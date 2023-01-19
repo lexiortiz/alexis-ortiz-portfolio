@@ -112,6 +112,12 @@ header #top-nav #top-nav-div #social-nav li {
 header #top-nav #top-nav-div #social-nav #first-list-item {
   padding-left: 0;
 }
+header #hero-intro #name-text {
+  font-size: 8rem;
+}
+header #hero-intro #intro-desc {
+  font-size: 3rem;
+}
 header #bottom-nav ul {
   padding: 0;
 }
@@ -119,7 +125,8 @@ header #bottom-nav ul li {
   list-style-type: none;
 }
 header #bottom-nav ul li:hover {
-  color: #AE4EF9;
+  color: rgb(21, 17, 24);
+  font-weight: 600;
 }
 header #bottom-nav #main-nav {
   float: right;

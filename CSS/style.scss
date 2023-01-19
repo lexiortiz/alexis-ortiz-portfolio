@@ -73,6 +73,15 @@ header {
     }
   }
 
+  #hero-intro {
+    #name-text {
+      font-size: 8rem;
+    }
+    #intro-desc {
+      font-size: 3rem;
+    }
+  }
+
   #bottom-nav {
     ul {
       padding: 0;
@@ -80,7 +89,8 @@ header {
         list-style-type: none;
       }
       li:hover {
-        color: $heliotrope;
+        color: $xiketic;
+        font-weight: 600;
       }
     }
     #main-nav {
