@@ -21,7 +21,11 @@ body {
 }
 
 header {
-  min-height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-size: 2.4rem;
   color: $cultured;
   padding: $spacing;
   background-image: $colorBurnSVG;
@@ -31,9 +35,6 @@ header {
 
   #top-nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 2.4rem;
 
     ul {
       padding: 0;
@@ -42,27 +43,16 @@ header {
       }
       li:hover {
         color: $heliotrope;
-        text-decoration: underline;
       }
     }
 
-    #personal-logo {
+    #top-nav-div {
       font-size: 2.6rem;
       font-weight: 500;
       float: left;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      #logo-text:hover {
-        color: $heliotrope;
-      }
 
       #social-nav {
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
         float: left;
         font-size: 2.4rem;
 
@@ -71,31 +61,31 @@ header {
           text-align: center;
         }
 
-        // #first-list-item {
-        //   padding-left: 0;
-        // }
+        #first-list-item {
+          padding-left: 0;
+        }
 
         li:hover {
-          border: 2px solid $white;
-          border-radius: 50%;
-          text-decoration: none;
+          // border: 2px solid $white;
+          // border-radius: 50%;
         }
       }
     }
+  }
 
-    #sensory-canvas {
-      //border: 2px solid $heliotrope;
-      border-radius: 16px;
-
-      canvas {
-        display: block;
-        border-radius: 1rem;
+  #bottom-nav {
+    ul {
+      padding: 0;
+      li {
+        list-style-type: none;
+      }
+      li:hover {
+        color: $heliotrope;
       }
     }
-
     #main-nav {
       float: right;
-      text-align: right;
+      text-align: left;
     }
   }
 }
