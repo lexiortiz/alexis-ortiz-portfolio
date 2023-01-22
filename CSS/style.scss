@@ -32,6 +32,7 @@ header {
   // background-position: center center;
   // background-size: cover;
 
+
   #top-nav {
     display: flex;
     align-items: center;
@@ -59,7 +60,7 @@ header {
         li {
           padding: 1rem;
           text-align: center;
-          border: 1px solid $white;
+          border: 1px solid transparent;
           border-radius: 50%;
         }
 
@@ -70,7 +71,8 @@ header {
 
         li:hover {
           // border: 1px solid $heliotrope;
-          text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+          // text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+          border: 1px solid $white;
         }
       }
     }
@@ -85,31 +87,34 @@ header {
 
   #hero-intro {
     margin-top: 6rem;
+    text-align: left;
 
-    #name-text {
+    .name-text {
       text-align: center;
-      font-size: clamp(4rem, 65vmin, 15rem);
+      font-size: clamp(4rem, 45vmin, 15rem);
       --bg-size: 400%;
       --color-one: hsl(248, 90%, 55%);
-      --color-two: rgb(180, 31, 249);
+      --color-two: hsla(281, 95%, 55%, 0.802);
       --color-three: hsl(301, 95%, 35%);
       background: linear-gradient(
-          140deg,
+          90deg,
           var(--color-one),
           var(--color-two),
           // var(--color-three),
           var(--color-one)
-        ) 0 0 / var(--bg-size) 100%;
+        ) 0 0 / var(--bg-size) 80%;
       color: transparent;
       -webkit-background-clip: text;
+      animation: move-bg 12s infinite linear reverse;
       background-clip: text;
-      letter-spacing: 9px;
+      letter-spacing: 8px;
       // font-family: "Balgin-BlackSmCondensed";
       //   src: url("Balgin-BlackSmCondensed.ttf");
       font-family: $fonts;
     }
     #intro-desc {
       font-size: 3rem;
+      font-weight: 500;
       margin-top: -4rem;
       letter-spacing: -1px;
       text-align: center;
@@ -243,5 +248,23 @@ main {
 
   #form-div {
     padding: 1rem 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .boujee-text {
+    animation: move-bg 8s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #name-text {
+    border: 1px solid red;
+    font-size: clamp(4rem, 45vmin, 23rem);
   }
 }
