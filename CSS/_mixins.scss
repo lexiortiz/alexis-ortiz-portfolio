@@ -41,13 +41,15 @@
 
 @mixin nav-button {
   border: none;
-  //   padding: 0.75rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
   color: white;
   text-decoration: none;
+  border: 1px solid $cultured-faded;
+  padding: 4px 12px;
+  border-radius: 120px;
 }
 
 @mixin nav-button-hover {
@@ -89,7 +91,7 @@
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 
-  -moz-animation: my-animation 10s linear infinite;
-  -webkit-animation: my-animation 10s linear infinite;
+  -moz-animation: my-animation 18s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
   animation: my-animation 10s linear infinite;
 }

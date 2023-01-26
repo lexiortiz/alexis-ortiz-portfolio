@@ -3,7 +3,7 @@
 @import "reset";
 
 body {
-  font-family: $fonts;
+  font-family: $display-font;
   // ** Will Change **
   background-color: $xiketic;
   color: $cultured;
@@ -17,12 +17,23 @@ header {
   @include display-column;
   min-height: 100vh;
   color: $cultured;
-  padding: $spacing;
   font-size: 1.9rem;
+  background-image: linear-gradient(
+    180deg,
+    hsl(274deg 17% 8%) 0%,
+    hsl(274deg 17% 8%) 10%,
+    hsl(274deg 17% 8%) 20%,
+    hsl(274deg 17% 8%) 30%,
+    hsl(274deg 17% 8%) 40%,
+    hsl(274deg 17% 8%) 50%,
+    hsl(250deg 29% 9%) 100%,
+  );
 
   #top-nav {
+    font-size: 2.2rem;
+    padding: 2rem $spacing;
     @include display-row;
-    display: none;
+    // display: none;
 
     ul {
       @include reset-list;
@@ -32,19 +43,11 @@ header {
       }
     }
 
-    #hero-contact {
-      @include display-row;
-
-      #empty-space {
-        padding: 0 2rem;
-      }
-    }
-
-    #menu-btn {
+    .hero-info {
       @include nav-button;
     }
 
-    #menu-btn:hover {
+    .hero-info:hover {
       @include nav-button-hover;
     }
 
@@ -73,21 +76,30 @@ header {
     }
   }
 
+  .name-div {
+    @include display-row;
+    justify-content: center;
+  }
+
+  .hero-name {
+    text-align: center;
+    padding: 0 1rem;
+    font-family: $display-font;
+    font-size: clamp(4rem, 30vmin, 7rem);
+    letter-spacing: 8px;
+    font-weight: 700;
+    
+  }
+
   #hero-center {
     text-align: center;
-
-    .hero-name {
-      font-size: clamp(4rem, 30vmin, 10rem);
-      letter-spacing: 8px;
-      font-family: $fonts;
-    }
+    padding: 0 $spacing;
 
     #hero-canvas-div {
-      margin: auto;
       width: 100%;
-      max-height: 30rem;
-      border: 2px solid $cultured;
-      border-radius: 50%;
+      max-height: 25rem;
+      border: 1px solid $cultured-faded;
+      border-radius: 120px;
       overflow: hidden;
     }
   }
@@ -96,12 +108,12 @@ header {
     overflow: hidden;
 
     #hero-role {
-      margin: 0 -2rem;
-      margin-top: $spacing;
-      font-weight: 700;
-      font-size: clamp(4rem, 45vmin, 8rem);
+      margin: 0 -0.9rem;
+      font-weight: 400;
+      letter-spacing: 4px;
+      font-size: clamp(4rem, 45vmin, 4.5rem);
       white-space: nowrap;
-      @include hero-role-animation;
+      // @include hero-role-animation;
     }
   }
 }

@@ -12,14 +12,13 @@ function setup() {
   let canvas = createCanvas(600, 600);
   // move canvas to div
   canvas.parent('hero-canvas-div');
-
   for (var i = 0; i < 800; i++) {
     stars[i] = new Star();
   }
 }
 
 function draw() {
-  speed = map(20, 0, width, 0, 20);
+  speed = map(30, 0, width, 0, 20);
   c = color('rgb(21, 17, 24)');
   sColor = color('rgb(248, 246, 244)');
   background(c);

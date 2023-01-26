@@ -59,7 +59,7 @@ h6 {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(21, 17, 24);
+  background-color: #151118;
   color: #F8F6F4;
 }
 body a:hover {
@@ -72,14 +72,15 @@ header {
   justify-content: space-between;
   min-height: 100vh;
   color: #F8F6F4;
-  padding: 3rem;
   font-size: 1.9rem;
+  background-image: linear-gradient(180deg, hsl(274deg, 17%, 8%) 0%, hsl(274deg, 17%, 8%) 10%, hsl(274deg, 17%, 8%) 20%, hsl(274deg, 17%, 8%) 30%, hsl(274deg, 17%, 8%) 40%, hsl(274deg, 17%, 8%) 50%, hsl(250deg, 29%, 9%) 100%);
 }
 header #top-nav {
+  font-size: 2.2rem;
+  padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: none;
 }
 header #top-nav ul {
   padding: 0;
@@ -88,15 +89,7 @@ header #top-nav ul {
 header #top-nav ul li:hover {
   font-weight: 600;
 }
-header #top-nav #hero-contact {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header #top-nav #hero-contact #empty-space {
-  padding: 0 2rem;
-}
-header #top-nav #menu-btn {
+header #top-nav .hero-info {
   border: none;
   text-align: center;
   text-decoration: none;
@@ -104,8 +97,11 @@ header #top-nav #menu-btn {
   cursor: pointer;
   color: white;
   text-decoration: none;
+  border: 1px solid rgba(248, 246, 244, 0.8);
+  padding: 4px 12px;
+  border-radius: 120px;
 }
-header #top-nav #menu-btn:hover {
+header #top-nav .hero-info:hover {
   font-weight: 500;
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 }
@@ -128,34 +124,40 @@ header #top-nav #hidden-nav #social-nav #first-list-item {
 header #top-nav #hidden-nav #social-nav li:hover {
   border: 1px solid #FFFDFB;
 }
+header .name-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+header .hero-name {
+  text-align: center;
+  padding: 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(4rem, 30vmin, 7rem);
+  letter-spacing: 8px;
+  font-weight: 700;
+}
 header #hero-center {
   text-align: center;
-}
-header #hero-center .hero-name {
-  font-size: clamp(4rem, 30vmin, 10rem);
-  letter-spacing: 8px;
-  font-family: "Montserrat", sans-serif;
+  padding: 0 3rem;
 }
 header #hero-center #hero-canvas-div {
-  margin: auto;
   width: 100%;
-  max-height: 30rem;
-  border: 2px solid #F8F6F4;
-  border-radius: 50%;
+  max-height: 25rem;
+  border: 1px solid rgba(248, 246, 244, 0.8);
+  border-radius: 120px;
   overflow: hidden;
 }
 header #hero-scroll {
   overflow: hidden;
 }
 header #hero-scroll #hero-role {
-  margin: 0 -2rem;
-  margin-top: 3rem;
-  font-weight: 700;
-  font-size: clamp(4rem, 45vmin, 8rem);
+  margin: 0 -0.9rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: clamp(4rem, 45vmin, 4.5rem);
   white-space: nowrap;
-  transform: translateX(100%);
-  -webkit-animation: my-animation 10s linear infinite;
-  animation: my-animation 10s linear infinite;
 }
 
 main {
@@ -172,7 +174,7 @@ main {
 }
 #about-section #h1-div h1 {
   font-size: 8rem;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Fira Sans Condensed", sans-serif;
   letter-spacing: 2px;
 }
 #about-section #h1-div #element-div {
@@ -192,7 +194,7 @@ main {
   padding-top: 1rem;
 }
 #work-section #work-sect-title {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 6rem;
 }
 #work-section #work-desc {
@@ -209,7 +211,7 @@ main {
   padding: 2rem 0;
 }
 #work-section .cards .card .project-header .card-title {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 3.8rem;
 }
 #work-section .cards .card .project-header .card-description {
@@ -230,7 +232,7 @@ main {
   padding-top: 2rem;
 }
 #contact-section #contact-title {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 6rem;
 }
 #contact-section #form-div {
