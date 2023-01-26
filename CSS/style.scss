@@ -2,19 +2,12 @@
 @import "mixins";
 @import "reset";
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: $fonts;
-  font-size: 1.6rem;
   // ** Will Change **
   background-color: $xiketic;
   color: $cultured;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
   a:hover {
     cursor: pointer;
   }

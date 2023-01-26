@@ -1,5 +1,5 @@
 /*
-  Josh Comeau's Custom CSS Reset
+  Building this reset from Josh Comeau's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
 *,
@@ -14,12 +14,16 @@
 
 html,
 body {
+  font-size: 62.5%;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
+  font-size: 1.6rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img,
@@ -53,18 +57,10 @@ h6 {
   isolation: isolate;
 }
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
   background-color: rgb(21, 17, 24);
   color: #F8F6F4;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 body a:hover {
   cursor: pointer;
