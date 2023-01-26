@@ -79,6 +79,7 @@ header #top-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: none;
 }
 header #top-nav ul {
   padding: 0;
@@ -131,17 +132,17 @@ header #hero-center {
   text-align: center;
 }
 header #hero-center .hero-name {
-  font-size: clamp(4rem, 45vmin, 12rem);
+  font-size: clamp(4rem, 30vmin, 10rem);
   letter-spacing: 8px;
   font-family: "Montserrat", sans-serif;
 }
-header #hero-center #hero-canvas {
+header #hero-center #hero-canvas-div {
   margin: auto;
   width: 100%;
-  background-color: rgb(21, 17, 24);
-  border: 1px solid #AE4EF9;
-  padding: 10px 20px;
+  max-height: 30rem;
+  border: 2px solid #F8F6F4;
   border-radius: 50%;
+  overflow: hidden;
 }
 header #hero-scroll {
   overflow: hidden;
@@ -152,6 +153,9 @@ header #hero-scroll #hero-role {
   font-weight: 700;
   font-size: clamp(4rem, 45vmin, 8rem);
   white-space: nowrap;
+  transform: translateX(100%);
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 10s linear infinite;
 }
 
 main {

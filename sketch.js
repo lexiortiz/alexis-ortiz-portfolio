@@ -1,62 +1,68 @@
-var xiketic;
-var cloudBlu;
-const particles = [];
+// Daniel Shiffman
+// http://codingtra.in
+// http://patreon.com/codingtrain
+// Code for: https://youtu.be/17WoOqgXsRM
+
+const stars = [];
+let speed;
+let c;
+let sColor;
 
 function setup() {
-  var canvas = createCanvas(300, 100);
-  canvas.parent('sensory-canvas');
-  heliotrope = color(210, 133, 254); 
-  xiketic = color(21, 17, 24); // bkgd
-  cloudBlu = color(116, 75, 139, 35); // particles
-  //create number of particles based on the window width
-  const particlesLength = Math.floor(300 / 1.9);
-  //go through and add to particles array
-  for(let i = 0; i < particlesLength; i++) {
-    particles.push(new Particle());
+  let canvas = createCanvas(600, 600);
+  // move canvas to div
+  canvas.parent('hero-canvas-div');
+
+  for (var i = 0; i < 800; i++) {
+    stars[i] = new Star();
   }
-  frameRate(40);
 }
 
 function draw() {
-  background(xiketic);
-  //for each particle, draw a circle and update velocity
-  particles.forEach((particle, index) => {
-     particle.update();
-     particle.draw();
-  });
+  speed = map(20, 0, width, 0, 20);
+  c = color('rgb(21, 17, 24)');
+  sColor = color('rgb(248, 246, 244)');
+  background(c);
+  translate(width / 2, height / 2);
+  for (var i = 0; i < stars.length; i++) {
+    stars[i].update();
+    stars[i].show();
+  }
 }
 
-class Particle {
-  constructor () {
-    //objects position
-    this.pos = createVector(random(300), random(100));
-    //objects velocity
-    this.vel = createVector(random(5, -5), random(-10, 10));
-    //objects size
-    this.size = 65;
+function Star() {
+  this.x = random(-width, width);
+  this.y = random(-height, height);
+  this.z = random(width);
+  this.pz = this.z;
+
+  this.update = function() {
+    this.z = this.z - speed;
+    if (this.z < 1) {
+      this.z = width;
+      this.x = random(-width, width);
+      this.y = random(-height, height);
+      this.pz = this.z;
+    }
   }
-  
-  //update movement by adding velocity
-  update () {
-    this.pos.add(this.vel);
-    this.edges();
-  }
-  
-  //draw single particle
-  draw() {
+
+  this.show = function() {
+    fill(sColor);
     noStroke();
-    fill(cloudBlu);
-    ellipse(this.pos.x, this.pos.y, this.size);
-  }
-  
-  //detect edges 
-  edges() {
-    if (this.pos.x < 0 || this.pos.x > width) {
-      this.vel.x *= -1;
-    }
-    
-    if (this.pos.y < 0 || this.pos.y > height) {
-      this.vel.y *= -1;
-    }
+
+    var sx = map(this.x / this.z, 0, 1, 0, width);
+    var sy = map(this.y / this.z, 0, 1, 0, height);
+
+    var r = map(this.z, 0, width, 16, 0);
+    ellipse(sx, sy, r, r);
+
+    var px = map(this.x / this.pz, 0, 1, 0, width);
+    var py = map(this.y / this.pz, 0, 1, 0, height);
+
+    this.pz = this.z;
+
+    stroke(sColor);
+    line(px, py, sx, sy);
+
   }
 }

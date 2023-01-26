@@ -22,6 +22,7 @@ header {
 
   #top-nav {
     @include display-row;
+    display: none;
 
     ul {
       @include reset-list;
@@ -76,18 +77,18 @@ header {
     text-align: center;
 
     .hero-name {
-      font-size: clamp(4rem, 45vmin, 12rem);
+      font-size: clamp(4rem, 30vmin, 10rem);
       letter-spacing: 8px;
       font-family: $fonts;
     }
 
-    #hero-canvas {
+    #hero-canvas-div {
       margin: auto;
       width: 100%;
-      background-color: $xiketic;
-      border: 1px solid $heliotrope;
-      padding: 10px 20px;
+      max-height: 30rem;
+      border: 2px solid $cultured;
       border-radius: 50%;
+      overflow: hidden;
     }
   }
 
@@ -100,7 +101,7 @@ header {
       font-weight: 700;
       font-size: clamp(4rem, 45vmin, 8rem);
       white-space: nowrap;
-      // @include hero-role-animation;
+      @include hero-role-animation;
     }
   }
 }
