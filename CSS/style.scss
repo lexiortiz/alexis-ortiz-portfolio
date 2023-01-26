@@ -24,7 +24,6 @@ header {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  font-size: 2.4rem;
   color: $cultured;
   padding: $spacing;
   // background-image: $colorBurnSVG;
@@ -32,10 +31,10 @@ header {
   // background-position: center center;
   // background-size: cover;
 
-
   #top-nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     ul {
       padding: 0;
@@ -47,15 +46,37 @@ header {
       }
     }
 
-    #top-nav-div {
-      font-size: 2.6rem;
+    #hero-contact {
+      display: flex;
+      font-size: 1.9rem;
+
+      .hero-info {
+        padding: 0.5rem;
+      }
+
+      #empty-space {
+        padding: 2rem;
+      }
+    }
+
+    #menu-btn {
+      color: white;
+      text-decoration: none;
+    }
+
+    #menu-btn:hover {
+      color: $heliotrope;
+      text-decoration: none;
+    }
+
+    #hidden-nav {
+      font-size: 1.9rem;
       font-weight: 500;
-      float: left;
+      display: none;
 
       #social-nav {
         display: flex;
         float: left;
-        font-size: 2.4rem;
 
         li {
           padding: 1rem;
@@ -76,74 +97,52 @@ header {
         }
       }
     }
-
-    .top-nav-line {
-      width: 100%;
-      border-top: 1px solid $cultured;
-      margin-right: -3rem;
-      margin-left: 1rem;
-    }
   }
 
-  #hero-intro {
-    margin-top: 6rem;
-    text-align: left;
+  #hero-center {
+    // margin-top: 6rem;
+    text-align: center;
 
-    .name-text {
-      text-align: center;
-      font-size: clamp(4rem, 45vmin, 15rem);
-      --bg-size: 400%;
-      --color-one: hsl(248, 90%, 55%);
-      --color-two: hsla(281, 95%, 55%, 0.802);
-      --color-three: hsl(301, 95%, 35%);
-      background: linear-gradient(
-          90deg,
-          var(--color-one),
-          var(--color-two),
-          // var(--color-three),
-          var(--color-one)
-        ) 0 0 / var(--bg-size) 80%;
-      color: transparent;
-      -webkit-background-clip: text;
-      animation: move-bg 12s infinite linear reverse;
-      background-clip: text;
+    .hero-name {
+      font-size: clamp(4rem, 45vmin, 12rem);
+      // --bg-size: 400%;
+      // --color-one: hsl(248, 90%, 55%);
+      // --color-two: hsla(281, 95%, 55%, 0.802);
+      // --color-three: hsl(301, 95%, 35%);
+      // background: linear-gradient(
+      //     90deg,
+      //     var(--color-one),
+      //     var(--color-two),
+      //     // var(--color-three),
+      //     var(--color-one)
+      //   ) 0 0 / var(--bg-size) 80%;
+      // color: transparent;
+      // -webkit-background-clip: text;
+      // animation: move-bg 12s infinite linear reverse;
+      // background-clip: text;
       letter-spacing: 8px;
       // font-family: "Balgin-BlackSmCondensed";
       //   src: url("Balgin-BlackSmCondensed.ttf");
       font-family: $fonts;
     }
-    #intro-desc {
-      font-size: 3rem;
-      font-weight: 500;
-      margin-top: -4rem;
-      letter-spacing: -1px;
-      text-align: center;
+
+    #hero-canvas {
+      margin: auto;
+      width: 100%;
+      background-color: $xiketic;
+      border: 1px solid $heliotrope;
+      padding: 10px 20px;
+      border-radius: 50%;
     }
   }
 
-  #bottom-nav {
-    ul {
-      padding: 0;
-      li {
-        list-style-type: none;
-      }
-      li:hover {
-        color: $white;
-        font-weight: 500;
-        text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
-      }
-    }
-    #main-nav {
-      float: right;
-      margin-right: -3rem;
-      width: 200px;
-
-      .nav-line {
-        width: 100%;
-        border-top: 1px solid $cultured;
-        padding: 1rem 0;
-        margin-top: 2px;
-      }
+  #hero-scroll {
+    #hero-role {
+      font-weight: 700;
+      font-size: clamp(4rem, 45vmin, 12rem);
+      margin: 0 -4rem;
+      white-space: nowrap;
+      overflow-x: scroll;
     }
   }
 }
@@ -151,6 +150,7 @@ header {
 main {
   padding-top: $spacing;
   padding: $spacing;
+  // border: 1px solid yellow;
 
   a {
     text-decoration: underline;

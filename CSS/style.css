@@ -75,13 +75,13 @@ header {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  font-size: 2.4rem;
   color: #F8F6F4;
   padding: 3rem;
 }
 header #top-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 header #top-nav ul {
   padding: 0;
@@ -92,81 +92,67 @@ header #top-nav ul li {
 header #top-nav ul li:hover {
   font-weight: 600;
 }
-header #top-nav #top-nav-div {
-  font-size: 2.6rem;
-  font-weight: 500;
-  float: left;
+header #top-nav #hero-contact {
+  display: flex;
+  font-size: 1.9rem;
 }
-header #top-nav #top-nav-div #social-nav {
+header #top-nav #hero-contact .hero-info {
+  padding: 0.5rem;
+}
+header #top-nav #hero-contact #empty-space {
+  padding: 2rem;
+}
+header #top-nav #menu-btn {
+  color: white;
+  text-decoration: none;
+}
+header #top-nav #menu-btn:hover {
+  color: #AE4EF9;
+  text-decoration: none;
+}
+header #top-nav #hidden-nav {
+  font-size: 1.9rem;
+  font-weight: 500;
+  display: none;
+}
+header #top-nav #hidden-nav #social-nav {
   display: flex;
   float: left;
-  font-size: 2.4rem;
 }
-header #top-nav #top-nav-div #social-nav li {
+header #top-nav #hidden-nav #social-nav li {
   padding: 1rem;
   text-align: center;
   border: 1px solid transparent;
   border-radius: 50%;
 }
-header #top-nav #top-nav-div #social-nav #first-list-item {
+header #top-nav #hidden-nav #social-nav #first-list-item {
   margin-left: -1rem;
 }
-header #top-nav #top-nav-div #social-nav li:hover {
+header #top-nav #hidden-nav #social-nav li:hover {
   border: 1px solid #FFFDFB;
 }
-header #top-nav .top-nav-line {
-  width: 100%;
-  border-top: 1px solid #F8F6F4;
-  margin-right: -3rem;
-  margin-left: 1rem;
-}
-header #hero-intro {
-  margin-top: 6rem;
-  text-align: left;
-}
-header #hero-intro .name-text {
+header #hero-center {
   text-align: center;
-  font-size: clamp(4rem, 45vmin, 15rem);
-  --bg-size: 400%;
-  --color-one: hsl(248, 90%, 55%);
-  --color-two: hsla(281, 95%, 55%, 0.802);
-  --color-three: hsl(301, 95%, 35%);
-  background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0/var(--bg-size) 80%;
-  color: transparent;
-  -webkit-background-clip: text;
-  animation: move-bg 12s infinite linear reverse;
-  background-clip: text;
+}
+header #hero-center .hero-name {
+  font-size: clamp(4rem, 45vmin, 12rem);
   letter-spacing: 8px;
   font-family: "Montserrat", sans-serif;
 }
-header #hero-intro #intro-desc {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-top: -4rem;
-  letter-spacing: -1px;
-  text-align: center;
-}
-header #bottom-nav ul {
-  padding: 0;
-}
-header #bottom-nav ul li {
-  list-style-type: none;
-}
-header #bottom-nav ul li:hover {
-  color: #FFFDFB;
-  font-weight: 500;
-  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
-}
-header #bottom-nav #main-nav {
-  float: right;
-  margin-right: -3rem;
-  width: 200px;
-}
-header #bottom-nav #main-nav .nav-line {
+header #hero-center #hero-canvas {
+  margin: auto;
   width: 100%;
-  border-top: 1px solid #F8F6F4;
-  padding: 1rem 0;
-  margin-top: 2px;
+  background-color: rgb(21, 17, 24);
+  border: 1px solid #AE4EF9;
+  padding: 10px 20px;
+  border-radius: 50%;
+}
+header #hero-scroll #hero-role {
+  font-weight: 700;
+  font-size: clamp(4rem, 45vmin, 12rem);
+  margin: 0 -4rem;
+  white-space: nowrap;
+  overflow-x: scroll;
 }
 
 main {
