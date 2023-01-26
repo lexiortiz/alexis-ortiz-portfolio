@@ -10,6 +10,7 @@ html {
 body {
   font-family: $fonts;
   font-size: 1.6rem;
+  // ** Will Change **
   background-color: $xiketic;
   color: $cultured;
   -webkit-font-smoothing: antialiased;
@@ -20,63 +21,45 @@ body {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include display-column;
   min-height: 100vh;
   color: $cultured;
   padding: $spacing;
-  // background-image: $colorBurnSVG;
-  // background-repeat: no-repeat no-repeat;
-  // background-position: center center;
-  // background-size: cover;
+  font-size: 1.9rem;
 
   #top-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include display-row;
 
     ul {
-      padding: 0;
-      li {
-        list-style-type: none;
-      }
+      @include reset-list;
+
       li:hover {
         font-weight: 600;
       }
     }
 
     #hero-contact {
-      display: flex;
-      font-size: 1.9rem;
-
-      .hero-info {
-        padding: 0.5rem;
-      }
+      @include display-row;
 
       #empty-space {
-        padding: 2rem;
+        padding: 0 2rem;
       }
     }
 
     #menu-btn {
-      color: white;
-      text-decoration: none;
+      @include nav-button;
     }
 
     #menu-btn:hover {
-      color: $heliotrope;
-      text-decoration: none;
+      @include nav-button-hover;
     }
 
     #hidden-nav {
-      font-size: 1.9rem;
       font-weight: 500;
       display: none;
 
       #social-nav {
         display: flex;
-        float: left;
 
         li {
           padding: 1rem;
@@ -86,13 +69,10 @@ header {
         }
 
         #first-list-item {
-          // padding-left: 0;
           margin-left: -1rem;
         }
 
         li:hover {
-          // border: 1px solid $heliotrope;
-          // text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
           border: 1px solid $white;
         }
       }
@@ -100,29 +80,11 @@ header {
   }
 
   #hero-center {
-    // margin-top: 6rem;
     text-align: center;
 
     .hero-name {
       font-size: clamp(4rem, 45vmin, 12rem);
-      // --bg-size: 400%;
-      // --color-one: hsl(248, 90%, 55%);
-      // --color-two: hsla(281, 95%, 55%, 0.802);
-      // --color-three: hsl(301, 95%, 35%);
-      // background: linear-gradient(
-      //     90deg,
-      //     var(--color-one),
-      //     var(--color-two),
-      //     // var(--color-three),
-      //     var(--color-one)
-      //   ) 0 0 / var(--bg-size) 80%;
-      // color: transparent;
-      // -webkit-background-clip: text;
-      // animation: move-bg 12s infinite linear reverse;
-      // background-clip: text;
       letter-spacing: 8px;
-      // font-family: "Balgin-BlackSmCondensed";
-      //   src: url("Balgin-BlackSmCondensed.ttf");
       font-family: $fonts;
     }
 
@@ -149,12 +111,6 @@ header {
 
 main {
   padding-top: $spacing;
-  padding: $spacing;
-  // border: 1px solid yellow;
-
-  a {
-    text-decoration: underline;
-  }
 }
 
 #about-section {
