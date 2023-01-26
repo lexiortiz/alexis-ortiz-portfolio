@@ -79,3 +79,17 @@
   background-clip: text;
   letter-spacing: 8px;
 }
+
+// @mixin hero-gradient {
+
+// }
+
+@mixin hero-role-animation {
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 10s linear infinite;
+}

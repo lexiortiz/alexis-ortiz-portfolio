@@ -143,12 +143,15 @@ header #hero-center #hero-canvas {
   padding: 10px 20px;
   border-radius: 50%;
 }
+header #hero-scroll {
+  overflow: hidden;
+}
 header #hero-scroll #hero-role {
+  margin: 0 -2rem;
+  margin-top: 3rem;
   font-weight: 700;
-  font-size: clamp(4rem, 45vmin, 12rem);
-  margin: 0 -4rem;
+  font-size: clamp(4rem, 45vmin, 8rem);
   white-space: nowrap;
-  overflow-x: scroll;
 }
 
 main {
@@ -230,6 +233,24 @@ main {
   padding: 1rem 0;
 }
 
+/* for Firefox */
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes my-animation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .boujee-text {
     -webkit-animation: move-bg 8s linear infinite;

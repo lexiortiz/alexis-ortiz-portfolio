@@ -92,12 +92,15 @@ header {
   }
 
   #hero-scroll {
+    overflow: hidden;
+
     #hero-role {
+      margin: 0 -2rem;
+      margin-top: $spacing;
       font-weight: 700;
-      font-size: clamp(4rem, 45vmin, 12rem);
-      margin: 0 -4rem;
+      font-size: clamp(4rem, 45vmin, 8rem);
       white-space: nowrap;
-      overflow-x: scroll;
+      // @include hero-role-animation;
     }
   }
 }
@@ -197,6 +200,39 @@ main {
 
   #form-div {
     padding: 1rem 0;
+  }
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
