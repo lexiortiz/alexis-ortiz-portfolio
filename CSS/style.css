@@ -160,8 +160,42 @@ header #hero-scroll #hero-role {
   white-space: nowrap;
 }
 
-main {
-  padding-top: 3rem;
+#work-section {
+  padding-top: 2rem;
+  min-height: 99vh;
+  background-image: linear-gradient(180deg, hsl(253deg, 30%, 9%) 0%, hsl(248deg, 34%, 10%) 11%, hsl(244deg, 37%, 10%) 22%, hsl(241deg, 40%, 11%) 33%, hsl(239deg, 43%, 11%) 44%, hsl(237deg, 47%, 11%) 56%, hsl(235deg, 52%, 11%) 67%, hsl(234deg, 56%, 12%) 78%, hsl(232deg, 60%, 12%) 89%, hsl(231deg, 64%, 12%) 100%);
+}
+#work-section #work-sect-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 6rem;
+}
+#work-section #work-desc {
+  padding: 3rem;
+}
+#work-section .cards {
+  width: 100%;
+  margin-top: 4rem;
+}
+#work-section .cards .card {
+  padding: 0 3rem;
+}
+#work-section .cards .card .project-header .card-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  letter-spacing: 1px;
+  font-size: 3.2rem;
+}
+#work-section .cards .card .project-header .card-description {
+  margin-bottom: 2rem;
+}
+#work-section .cards .card .project-link .project-img {
+  margin: 1rem 0;
+}
+#work-section .cards .card .project-link .project-img:hover {
+  border: 1rem solid orange;
+}
+#work-section .cards #project3-container {
+  border-bottom: 1.5px solid gray;
 }
 
 #about-section {
@@ -187,44 +221,6 @@ main {
 }
 #about-section #read-more {
   padding: 3rem 0;
-}
-
-#work-section {
-  min-height: 99vh;
-  padding-top: 1rem;
-}
-#work-section #work-sect-title {
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 6rem;
-}
-#work-section #work-desc {
-  padding-top: 1rem;
-}
-#work-section .cards {
-  width: 100%;
-  margin-top: 6rem;
-  display: flex;
-  flex-direction: column;
-}
-#work-section .cards .card {
-  border-top: 1.5px solid gray;
-  padding: 2rem 0;
-}
-#work-section .cards .card .project-header .card-title {
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 3.8rem;
-}
-#work-section .cards .card .project-header .card-description {
-  margin-bottom: 2rem;
-}
-#work-section .cards .card .project-link .project-img {
-  margin: 1rem 0;
-}
-#work-section .cards .card .project-link .project-img:hover {
-  border: 1rem solid orange;
-}
-#work-section .cards #project3-container {
-  border-bottom: 1.5px solid gray;
 }
 
 #contact-section {
