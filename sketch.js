@@ -17,17 +17,17 @@ function setup() {
   }
 }
 
-function draw() {
-  speed = map(30, 0, width, 0, 20);
-  c = color('rgb(21, 17, 24)');
-  sColor = color('rgb(248, 246, 244)');
-  background(c);
-  translate(width / 2, height / 2);
-  for (var i = 0; i < stars.length; i++) {
-    stars[i].update();
-    stars[i].show();
-  }
-}
+// function draw() {
+//   speed = map(30, 0, width, 0, 20);
+//   c = color('rgb(21, 17, 24)');
+//   sColor = color('rgb(248, 246, 244)');
+//   background(c);
+//   translate(width / 2, height / 2);
+//   for (var i = 0; i < stars.length; i++) {
+//     stars[i].update();
+//     stars[i].show();
+//   }
+// }
 
 function Star() {
   this.x = random(-width, width);
