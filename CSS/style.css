@@ -161,6 +161,9 @@ header #hero-scroll #hero-role {
 }
 
 #work-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 2rem;
   min-height: 99vh;
   background-image: linear-gradient(180deg, hsl(253deg, 30%, 9%) 0%, hsl(248deg, 34%, 10%) 11%, hsl(244deg, 37%, 10%) 22%, hsl(241deg, 40%, 11%) 33%, hsl(239deg, 43%, 11%) 44%, hsl(237deg, 47%, 11%) 56%, hsl(235deg, 52%, 11%) 67%, hsl(234deg, 56%, 12%) 78%, hsl(232deg, 60%, 12%) 89%, hsl(231deg, 64%, 12%) 100%);
@@ -175,10 +178,9 @@ header #hero-scroll #hero-role {
 }
 #work-section .cards {
   width: 100%;
-  margin-top: 4rem;
 }
 #work-section .cards .card {
-  padding: 0 3rem;
+  padding: 3rem;
 }
 #work-section .cards .card .project-header .card-title {
   font-family: "Fira Sans Condensed", sans-serif;
@@ -186,16 +188,15 @@ header #hero-scroll #hero-role {
   font-size: 3.2rem;
 }
 #work-section .cards .card .project-header .card-description {
-  margin-bottom: 2rem;
+  color: rgba(248, 246, 244, 0.8);
 }
 #work-section .cards .card .project-link .project-img {
   margin: 1rem 0;
 }
 #work-section .cards .card .project-link .project-img:hover {
-  border: 1rem solid orange;
-}
-#work-section .cards #project3-container {
-  border-bottom: 1.5px solid gray;
+  margin: auto;
+  border: 1rem solid rgb(23, 16, 28);
+  border-radius: 70%;
 }
 
 #about-section {
