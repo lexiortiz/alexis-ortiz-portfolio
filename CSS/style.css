@@ -165,6 +165,7 @@ header #hero-scroll #hero-role {
   flex-direction: column;
   justify-content: space-between;
   padding-top: 2rem;
+  font-size: 1.9rem;
   min-height: 99vh;
   background-image: linear-gradient(180deg, hsl(253deg, 30%, 9%) 0%, hsl(248deg, 34%, 10%) 11%, hsl(244deg, 37%, 10%) 22%, hsl(241deg, 40%, 11%) 33%, hsl(239deg, 43%, 11%) 44%, hsl(237deg, 47%, 11%) 56%, hsl(235deg, 52%, 11%) 67%, hsl(234deg, 56%, 12%) 78%, hsl(232deg, 60%, 12%) 89%, hsl(231deg, 64%, 12%) 100%);
 }
@@ -182,37 +183,43 @@ header #hero-scroll #hero-role {
 #work-section .cards .card {
   padding: 3rem;
 }
+#work-section .cards .card .project-header {
+  text-align: center;
+}
 #work-section .cards .card .project-header .card-title {
   font-family: "Fira Sans Condensed", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-size: 3.2rem;
+  font-weight: 600;
 }
 #work-section .cards .card .project-header .card-description {
   color: rgba(248, 246, 244, 0.8);
 }
-#work-section .cards .card .project-link .project-img {
-  margin: 1rem 0;
-}
-#work-section .cards .card .project-link .project-img:hover {
-  margin: auto;
-  border: 1rem solid rgb(23, 16, 28);
-  border-radius: 70%;
+#work-section .cards .card .project-preview {
+  border-top: 1px solid rgba(248, 246, 244, 0.8);
+  padding-top: 1rem;
+  border-bottom: 1px solid rgba(248, 246, 244, 0.8);
+  padding-bottom: 1rem;
+  margin: 1rem -3rem;
 }
 
 #about-section {
   min-height: 99vh;
+  font-size: 1.9rem;
+  padding: 3rem;
+  padding-top: 4rem;
+  background-image: linear-gradient(180deg, hsl(231deg, 64%, 12%) 0%, hsl(230deg, 64%, 13%) 10%, hsl(230deg, 64%, 14%) 20%, hsl(230deg, 62%, 16%) 30%, hsl(229deg, 63%, 17%) 40%, hsl(229deg, 63%, 18%) 50%, hsl(228deg, 63%, 19%) 60%, hsl(228deg, 63%, 20%) 70%, hsl(228deg, 62%, 22%) 80%, hsl(228deg, 62%, 23%) 90%, #172664 100%);
 }
-#about-section #h1-div {
+#about-section #about-h1-div {
   display: flex;
   align-items: center;
-  margin-top: 3rem;
 }
-#about-section #h1-div h1 {
+#about-section #about-h1-div h1 {
   font-size: 8rem;
   font-family: "Fira Sans Condensed", sans-serif;
   letter-spacing: 2px;
 }
-#about-section #h1-div #element-div {
+#about-section #about-h1-div #element-div {
   padding: 1rem;
   font-size: 4rem;
   color: orange;
@@ -221,12 +228,29 @@ header #hero-scroll #hero-role {
   font-size: 1.8rem;
 }
 #about-section #read-more {
-  padding: 3rem 0;
+  margin-top: 3rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(248, 246, 244, 0.8);
+  padding: 4px 12px;
+  border-radius: 120px;
+}
+#about-section #read-more:hover {
+  font-weight: 500;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 }
 
 #contact-section {
   min-height: 99vh;
-  padding-top: 2rem;
+  font-size: 1.9rem;
+  padding: 3rem;
+  padding-top: 4rem;
+  background-image: linear-gradient(180deg, hsl(228deg, 63%, 24%) 0%, hsl(229deg, 62%, 22%) 10%, hsl(229deg, 63%, 19%) 20%, hsl(230deg, 63%, 17%) 30%, hsl(230deg, 64%, 14%) 40%, hsl(231deg, 64%, 12%) 50%, hsl(231deg, 59%, 12%) 60%, hsl(233deg, 55%, 11%) 70%, hsl(234deg, 50%, 11%) 80%, hsl(235deg, 44%, 11%) 90%, hsl(237deg, 40%, 10%) 100%);
 }
 #contact-section #contact-title {
   font-family: "Fira Sans Condensed", sans-serif;
@@ -234,6 +258,14 @@ header #hero-scroll #hero-role {
 }
 #contact-section #form-div {
   padding: 1rem 0;
+}
+
+footer {
+  text-align: center;
+  color: gray;
+  font-size: 1.8rem;
+  padding: 3rem;
+  background-image: linear-gradient(180deg, hsl(237deg, 40%, 10%) 0%, hsl(243deg, 37%, 10%) 11%, hsl(253deg, 29%, 9%) 44%, hsl(260deg, 26%, 9%) 56%, hsl(262deg, 24%, 9%) 67%, hsl(264deg, 23%, 9%) 78%, hsl(270deg, 19%, 8%) 100%);
 }
 
 /* for Firefox */

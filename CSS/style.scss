@@ -120,6 +120,7 @@ header {
 #work-section {
   @include display-column;
   padding-top: 2rem;
+  font-size: 1.9rem;
   min-height: 99vh;
   background-image: linear-gradient(
     180deg,
@@ -152,10 +153,13 @@ header {
       padding: 3rem;
 
       .project-header {
+        text-align: center;
+
         .card-title {
           font-family: $heading-font;
-          letter-spacing: 1px;
+          letter-spacing: 2px;
           font-size: 3.2rem;
+          font-weight: 600;
         }
 
         .card-description {
@@ -163,33 +167,44 @@ header {
         }
       }
 
-      .project-link {
-        .project-img {
-          margin: 1rem 0;
-        }
-        .project-img:hover {
-          margin: auto;
-          border: 1rem solid $dark-xiketic;
-          border-radius: 70%;
-          
-        }
+      .project-preview {
+        border-top: 1px solid $cultured-faded;
+        padding-top: 1rem;
+        border-bottom: 1px solid $cultured-faded;
+        padding-bottom: 1rem;
+        margin: 1rem -3rem;
       }
     }
 
     // #project3-container {
     //   border-bottom: 1.5px solid gray;
     // }
-    
   }
 }
 
 #about-section {
   min-height: 99vh;
+  font-size: 1.9rem;
+  padding: 3rem;
+  padding-top: 4rem;
+  background-image: linear-gradient(
+    180deg,
+    hsl(231deg 64% 12%) 0%,
+    hsl(230deg 64% 13%) 10%,
+    hsl(230deg 64% 14%) 20%,
+    hsl(230deg 62% 16%) 30%,
+    hsl(229deg 63% 17%) 40%,
+    hsl(229deg 63% 18%) 50%,
+    hsl(228deg 63% 19%) 60%,
+    hsl(228deg 63% 20%) 70%,
+    hsl(228deg 62% 22%) 80%,
+    hsl(228deg 62% 23%) 90%,
+    #172664 100%
+  );
 
-  #h1-div {
+  #about-h1-div {
     display: flex;
     align-items: center;
-    margin-top: 3rem;
 
     h1 {
       font-size: 8rem;
@@ -206,13 +221,34 @@ header {
     font-size: 1.8rem;
   }
   #read-more {
-    padding: 3rem 0;
+    margin-top: 3rem;
+    @include nav-button;
+  }
+
+  #read-more:hover {
+    @include nav-button-hover;
   }
 }
 
 #contact-section {
   min-height: 99vh;
-  padding-top: 2rem;
+  font-size: 1.9rem;
+  padding: 3rem;
+  padding-top: 4rem;
+  background-image: linear-gradient(
+    180deg,
+    hsl(228deg 63% 24%) 0%,
+    hsl(229deg 62% 22%) 10%,
+    hsl(229deg 63% 19%) 20%,
+    hsl(230deg 63% 17%) 30%,
+    hsl(230deg 64% 14%) 40%,
+    hsl(231deg 64% 12%) 50%,
+    hsl(231deg 59% 12%) 60%,
+    hsl(233deg 55% 11%) 70%,
+    hsl(234deg 50% 11%) 80%,
+    hsl(235deg 44% 11%) 90%,
+    hsl(237deg 40% 10%) 100%
+  );
 
   #contact-title {
     font-family: $heading-font;
@@ -222,6 +258,23 @@ header {
   #form-div {
     padding: 1rem 0;
   }
+}
+
+footer {
+  text-align: center;
+  color: gray;
+  font-size: 1.8rem;
+  padding: 3rem;
+  background-image: linear-gradient(
+    180deg,
+    hsl(237deg 40% 10%) 0%,
+    hsl(243deg 37% 10%) 11%,
+    hsl(253deg 29% 9%) 44%,
+    hsl(260deg 26% 9%) 56%,
+    hsl(262deg 24% 9%) 67%,
+    hsl(264deg 23% 9%) 78%,
+    hsl(270deg 19% 8%) 100%,
+  );
 }
 
 /* for Firefox */
