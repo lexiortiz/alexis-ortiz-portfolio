@@ -231,10 +231,9 @@ header {
 }
 
 #contact-section {
-  min-height: 99vh;
+  min-height: 89vh;
   font-size: 1.9rem;
   padding: 3rem;
-  padding-top: 4rem;
   background-image: linear-gradient(
     180deg,
     hsl(228deg 63% 24%) 0%,
@@ -255,8 +254,48 @@ header {
     font-size: 6rem;
   }
 
-  #form-div {
-    padding: 1rem 0;
+  #contact-desc {
+    padding-top: 3rem;
+  }
+
+  #all-contact-info {
+    padding-top: 6rem;
+    @include display-column;
+    align-items: center;
+    text-align: center;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      .socials {
+        @include nav-button;
+        margin: 1rem;
+      }
+
+      .socials:hover {
+        @include nav-button-hover;
+      }
+
+      .info {
+        text-align: center;
+        font-size: 2.2rem;
+      }
+
+      .info:hover {
+        @include nav-button-hover;
+      }
+
+      a {
+        color: $cultured;
+        text-decoration: none;
+      }
+    }
+
+    #bottom-socials {
+      padding-top: 3rem;
+      @include display-row;
+    }
   }
 }
 
@@ -264,7 +303,7 @@ footer {
   text-align: center;
   color: gray;
   font-size: 1.8rem;
-  padding: 3rem;
+  padding: 2rem 0;
   background-image: linear-gradient(
     180deg,
     hsl(237deg 40% 10%) 0%,
@@ -273,7 +312,7 @@ footer {
     hsl(260deg 26% 9%) 56%,
     hsl(262deg 24% 9%) 67%,
     hsl(264deg 23% 9%) 78%,
-    hsl(270deg 19% 8%) 100%,
+    hsl(270deg 19% 8%) 100%
   );
 }
 
