@@ -157,7 +157,7 @@ header #top-nav .popup .popupEmail {
   position: absolute;
   z-index: 1;
   top: 125%;
-  left: -175%;
+  left: -180%;
 }
 header #top-nav .popup .popupEmail .c-info {
   color: #F8F6F4;
@@ -336,10 +336,27 @@ header #hero-scroll #hero-role {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  cursor: pointer;
 }
 #contact-section #all-contact-info ul {
   list-style-type: none;
   padding: 0;
+}
+#contact-section #all-contact-info ul #bottom-info #bottomMail {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(248, 246, 244, 0.8);
+  padding: 4px 12px;
+  border-radius: 120px;
+}
+#contact-section #all-contact-info ul #bottom-info #bottomMail:hover {
+  font-weight: 500;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 }
 #contact-section #all-contact-info ul .socials {
   border: none;
