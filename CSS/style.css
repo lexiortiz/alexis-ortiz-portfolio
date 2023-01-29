@@ -82,7 +82,6 @@ header #top-nav {
   justify-content: space-between;
   align-items: center;
   /* Popup container */
-  /* The actual popup (appears on top) */
   /* Toggle this class when clicking on the popup container (hide and show the popup) */
 }
 header #top-nav ul {
@@ -132,15 +131,42 @@ header #top-nav .popup .popupNumber {
   top: 125%;
   left: 2px;
 }
-header #top-nav .popup .popupNumber .c-desc {
-  margin-top: 2rem;
-}
 header #top-nav .popup .popupNumber .c-info {
-  text-align: left;
   color: #F8F6F4;
   text-decoration: none;
 }
+header #top-nav .popup .popupNumber .c-info .c-info-num {
+  font-weight: 600;
+}
 header #top-nav .popup .popupNumber .c-info:hover {
+  font-weight: 500;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+header #top-nav .popup .popupEmail {
+  background: rgba(21, 17, 24, 0.2);
+  box-shadow: 0 8px 32px 0 hsla(236deg, 63%, 33%, 0.37);
+  backdrop-filter: blur(25.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  white-space: nowrap;
+  visibility: hidden;
+  border-radius: 8px;
+  padding: 3rem;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: -175%;
+}
+header #top-nav .popup .popupEmail .c-info {
+  color: #F8F6F4;
+  text-decoration: none;
+}
+header #top-nav .popup .popupEmail .c-info .c-info-mail {
+  font-weight: 600;
+}
+header #top-nav .popup .popupEmail .c-info:hover {
   font-weight: 500;
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
   font-weight: 500;

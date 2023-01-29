@@ -59,7 +59,6 @@ header {
       cursor: pointer;
     }
 
-    /* The actual popup (appears on top) */
     .popup .popupNumber {
       background: rgba(21, 17, 24, 0.2);
       box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
@@ -76,14 +75,44 @@ header {
       top: 125%;
       left: 2px;
 
-      .c-desc {
-        margin-top: 2rem;
-      }
-
       .c-info {
-        text-align: left;
         color: $cultured;
         text-decoration: none;
+
+        .c-info-num {
+          font-weight: 600;
+        }
+      }
+
+      .c-info:hover {
+        @include nav-button-hover;
+        font-weight: 500;
+      }
+    }
+
+    .popup .popupEmail {
+      background: rgba(21, 17, 24, 0.2);
+      box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
+      backdrop-filter: blur(25.5px);
+      -webkit-backdrop-filter: blur(10.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      white-space: nowrap;
+      visibility: hidden;
+      border-radius: 8px;
+      padding: 3rem;
+      position: absolute;
+      z-index: 1;
+      top: 125%;
+      left: -175%;
+
+      .c-info {
+        color: $cultured;
+        text-decoration: none;
+
+        .c-info-mail {
+          font-weight: 600;
+        }
       }
 
       .c-info:hover {
