@@ -51,6 +51,54 @@ header {
       @include nav-button-hover;
     }
 
+    /* Popup container */
+    .popup {
+      position: relative;
+      @include display-column;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    /* The actual popup (appears on top) */
+    .popup .popupNumber {
+      background: rgba(21, 17, 24, 0.2);
+      box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
+      backdrop-filter: blur(25.5px);
+      -webkit-backdrop-filter: blur(10.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      white-space: nowrap;
+      visibility: hidden;
+      border-radius: 8px;
+      padding: 3rem;
+      position: absolute;
+      z-index: 1;
+      top: 125%;
+      left: 2px;
+
+      .c-desc {
+        margin-top: 2rem;
+      }
+
+      .c-info {
+        text-align: left;
+        color: $cultured;
+        text-decoration: none;
+      }
+
+      .c-info:hover {
+        @include nav-button-hover;
+        font-weight: 500;
+      }
+    }
+
+    /* Toggle this class when clicking on the popup container (hide and show the popup) */
+    .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+
     #hidden-nav {
       font-weight: 500;
       display: none;
@@ -314,6 +362,25 @@ footer {
     hsl(264deg 23% 9%) 78%,
     hsl(270deg 19% 8%) 100%
   );
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* for Firefox */

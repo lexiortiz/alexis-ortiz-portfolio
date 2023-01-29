@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Alexis Ortiz Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,9 +31,38 @@
     <script src="sketch.js"></script>
     <header id="header-section">
       <nav id="top-nav">
-        <p class="hero-info">CALL</p>
+        <div class="popup" onclick="showPhoneNumber()">
+          <p class="hero-info">CALL</p>
+          <span class="popupNumber" id="popNum">
+            Let's chat! If you cannot reach me, please <br> leave a voice or text message.<br>
+            <a href="tel:470-737-5829" class="c-info">
+              <span class="c-info-icon">Icon</span>
+              <span class="c-info-num">
+                +1(470) 737-5829
+              </span>
+            </a>
+          </span>
+        </div>
         <p>✧</p>
-        <p class="hero-info">MESSAGE</p>
+        <div class="popup" onclick="showPhoneNumber()">
+          <p class="hero-info">MESSAGE</p>
+          <span class="popupNumber" id="popNum">
+            Let's chat!
+            <br>
+            <span class="c-desc">
+              If you cannot reach me, please <br> leave a voice or text message.
+            </span>
+            <br>
+            <a href="tel:470-737-5829" class="c-info">
+              <span class="c-info-icon">Icon</span>
+              <span class="c-info-num">
+                +1(470) 737-5829
+              </span>
+            </a>
+            <br />
+            <a href="https://t.me/scriptnscribe" class="c-info">Telegram</a>
+          </span>
+        </div>
         <p>✧</p>
         <div id="main-nav">
           <a href="" id="menu-btn" class="hero-info"><p>MENU</p></a>
