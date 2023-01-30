@@ -176,9 +176,61 @@ header #top-nav .popup .show {
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
+header #top-nav #menu-div {
+  padding: 3rem;
+}
+header #top-nav #main-nav {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  border: none;
+}
+header #top-nav #main-nav .btn-nav {
+  position: fixed;
+  right: 3rem;
+  top: 2rem;
+  z-index: 99999;
+}
+header #top-nav .hidden {
+  display: none;
+}
 header #top-nav #hidden-nav {
   font-weight: 500;
-  display: none;
+  position: fixed;
+  top: 30%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #151118;
+  display: block;
+  height: 100%;
+  z-index: 9;
+}
+header #top-nav #hidden-nav .nav-list {
+  position: relative;
+}
+header #top-nav #hidden-nav .nav-list .item-anchor:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  background: transparent;
+}
+header #top-nav #hidden-nav .nav-list .item-anchor {
+  position: relative;
+}
+header #top-nav #hidden-nav .nav-list .item-anchor:hover,
+header #top-nav #hidden-nav .nav-list .item-anchor:focus {
+  color: #f9b339;
+}
+header #top-nav #hidden-nav .nav-list .item-anchor:hover:after,
+header #top-nav #hidden-nav .nav-list .item-anchor:focus:after {
+  width: 100%;
+  background: #f9b339;
+  transition: all 1s ease;
 }
 header #top-nav #hidden-nav #social-nav {
   display: flex;
@@ -194,6 +246,42 @@ header #top-nav #hidden-nav #social-nav #first-list-item {
 }
 header #top-nav #hidden-nav #social-nav li:hover {
   border: 1px solid #FFFDFB;
+}
+header #top-nav #hidden-nav .animated {
+  display: block;
+  margin: 0 auto;
+}
+header #top-nav #hidden-nav .animated:hover .icon-bar,
+header #top-nav #hidden-nav .animated:focus .icon-bar {
+  background-color: #fca311;
+}
+header #top-nav #hidden-nav .animated:focus {
+  cursor: pointer;
+  z-index: 9999;
+}
+header #top-nav #hidden-nav .middle {
+  margin: 0 auto;
+}
+header #top-nav #hidden-nav .icon-bar {
+  transition: all 0.7s ease;
+  z-index: 999999;
+}
+header #top-nav #hidden-nav .animated .icon-bar {
+  z-index: 999999;
+  background-color: #fca311;
+}
+header #top-nav #hidden-nav .animated .top {
+  transform: translateY(10px) rotateZ(45deg);
+}
+header #top-nav #hidden-nav .animated .bottom {
+  transform: translateY(-11px) rotateZ(-45deg);
+}
+header #top-nav #hidden-nav .animated .middle {
+  width: 0;
+}
+header #top-nav #hidden-nav .hideNav {
+  -webkit-animation: hideNav 1s ease forwards;
+  animation: hideNav 1s ease forwards;
 }
 header .name-div {
   display: flex;
@@ -402,6 +490,43 @@ footer {
   background-image: linear-gradient(180deg, hsl(237deg, 40%, 10%) 0%, hsl(243deg, 37%, 10%) 11%, hsl(253deg, 29%, 9%) 44%, hsl(260deg, 26%, 9%) 56%, hsl(262deg, 24%, 9%) 67%, hsl(264deg, 23%, 9%) 78%, hsl(270deg, 19%, 8%) 100%);
 }
 
+@keyframes showNav {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+@-webkit-keyframes showNav {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+.showNav {
+  -webkit-animation: showNav 1s ease forwards;
+  animation: showNav 1s ease forwards;
+}
+
+@keyframes hideNav {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+@-webkit-keyframes hideNav {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {
