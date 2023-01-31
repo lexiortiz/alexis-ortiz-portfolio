@@ -1,0 +1,49 @@
+/* ** MAIN MENU ** */
+#menu-div {
+    border: 1px solid red;
+}
+
+
+
+.item-anchor:after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    background: transparent;
+}
+
+.item-anchor {
+    position: relative;
+}
+
+.item-anchor:hover,
+.item-anchor:focus {
+    color: white;
+}
+
+.item-anchor:hover:after,
+.item-anchor:focus:after {
+    width: 100%;
+    background: white;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#social-nav {
+    display: flex;
+}
+
+#first-list-item {
+    margin-left: -1rem;
+}
+
+#social-nav li {
+    margin: 2rem;
+}
