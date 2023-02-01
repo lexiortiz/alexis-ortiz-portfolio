@@ -29,6 +29,7 @@ header {
     hsl(274deg 17% 8%) 50%,
     hsl(250deg 29% 9%) 100%
   );
+  padding: 4rem;
 
   #top-nav {
     font-size: 2.2rem;
@@ -103,7 +104,7 @@ header {
       padding: 3rem;
       position: absolute;
       z-index: 1;
-      top: 125%;
+      top: 140%;
       left: -180%;
 
       .c-info {
@@ -122,11 +123,13 @@ header {
     }
 
     .popup .popupMenu {
-      min-width: 600px;
+      @include display-column;
+      min-width: 500px;
+      width: 200px;
       height: 85vh;
       background: rgba(21, 17, 24, 0.2);
-      box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
-      backdrop-filter: blur(25.5px);
+      // box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
+      backdrop-filter: blur(65.5px);
       -webkit-backdrop-filter: blur(10.5px);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
@@ -137,21 +140,8 @@ header {
       position: absolute;
       z-index: 1;
       top: 125%;
-      left: -500%;
-
-      .nav-list {
-        color: $cultured;
-        text-decoration: none;
-
-        .nav-item {
-          font-weight: 600;
-        }
-
-        .nav-item:hover {
-          @include nav-button-hover;
-          font-weight: 500;
-        }
-      }
+      right: 0;
+      cursor: crosshair;
     }
 
     /* Toggle this class when clicking on the popup container (hide and show the popup) */

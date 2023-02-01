@@ -75,6 +75,7 @@ header {
   color: #F8F6F4;
   font-size: 1.9rem;
   background-image: linear-gradient(180deg, hsl(274deg, 17%, 8%) 0%, hsl(274deg, 17%, 8%) 10%, hsl(274deg, 17%, 8%) 20%, hsl(274deg, 17%, 8%) 30%, hsl(274deg, 17%, 8%) 40%, hsl(274deg, 17%, 8%) 50%, hsl(250deg, 29%, 9%) 100%);
+  padding: 4rem;
 }
 header #top-nav {
   font-size: 2.2rem;
@@ -99,7 +100,7 @@ header #top-nav .hero-info {
   cursor: pointer;
   color: white;
   text-decoration: none;
-  border: 1px solid rgba(248, 246, 244, 0.8);
+  border: 1px solid hsla(30deg, 22%, 96%, 0.8);
   padding: 4px 12px;
   border-radius: 120px;
 }
@@ -156,7 +157,7 @@ header #top-nav .popup .popupEmail {
   padding: 3rem;
   position: absolute;
   z-index: 1;
-  top: 125%;
+  top: 140%;
   left: -180%;
 }
 header #top-nav .popup .popupEmail .c-info {
@@ -172,11 +173,14 @@ header #top-nav .popup .popupEmail .c-info:hover {
   font-weight: 500;
 }
 header #top-nav .popup .popupMenu {
-  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 500px;
+  width: 200px;
   height: 85vh;
   background: rgba(21, 17, 24, 0.2);
-  box-shadow: 0 8px 32px 0 hsla(236deg, 63%, 33%, 0.37);
-  backdrop-filter: blur(25.5px);
+  backdrop-filter: blur(65.5px);
   -webkit-backdrop-filter: blur(10.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -187,19 +191,8 @@ header #top-nav .popup .popupMenu {
   position: absolute;
   z-index: 1;
   top: 125%;
-  left: -500%;
-}
-header #top-nav .popup .popupMenu .nav-list {
-  color: #F8F6F4;
-  text-decoration: none;
-}
-header #top-nav .popup .popupMenu .nav-list .nav-item {
-  font-weight: 600;
-}
-header #top-nav .popup .popupMenu .nav-list .nav-item:hover {
-  font-weight: 500;
-  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
-  font-weight: 500;
+  right: 0;
+  cursor: crosshair;
 }
 header #top-nav .popup .show {
   visibility: visible;
@@ -227,7 +220,7 @@ header #hero-center {
 header #hero-center #hero-canvas-div {
   width: 100%;
   max-height: 25rem;
-  border: 1px solid rgba(248, 246, 244, 0.8);
+  border: 1px solid hsla(30deg, 22%, 96%, 0.8);
   border-radius: 120px;
   overflow: hidden;
 }
@@ -275,12 +268,12 @@ header #hero-scroll #hero-role {
   font-weight: 600;
 }
 #work-section .cards .card .project-header .card-description {
-  color: rgba(248, 246, 244, 0.8);
+  color: hsla(30deg, 22%, 96%, 0.8);
 }
 #work-section .cards .card .project-preview {
-  border-top: 1px solid rgba(248, 246, 244, 0.8);
+  border-top: 1px solid hsla(30deg, 22%, 96%, 0.8);
   padding-top: 1rem;
-  border-bottom: 1px solid rgba(248, 246, 244, 0.8);
+  border-bottom: 1px solid hsla(30deg, 22%, 96%, 0.8);
   padding-bottom: 1rem;
   margin: 1rem -3rem;
 }
@@ -317,7 +310,7 @@ header #hero-scroll #hero-role {
   cursor: pointer;
   color: white;
   text-decoration: none;
-  border: 1px solid rgba(248, 246, 244, 0.8);
+  border: 1px solid hsla(30deg, 22%, 96%, 0.8);
   padding: 4px 12px;
   border-radius: 120px;
 }
@@ -359,7 +352,7 @@ header #hero-scroll #hero-role {
   cursor: pointer;
   color: white;
   text-decoration: none;
-  border: 1px solid rgba(248, 246, 244, 0.8);
+  border: 1px solid hsla(30deg, 22%, 96%, 0.8);
   padding: 4px 12px;
   border-radius: 120px;
 }
@@ -374,7 +367,7 @@ header #hero-scroll #hero-role {
   cursor: pointer;
   color: white;
   text-decoration: none;
-  border: 1px solid rgba(248, 246, 244, 0.8);
+  border: 1px solid hsla(30deg, 22%, 96%, 0.8);
   padding: 4px 12px;
   border-radius: 120px;
   margin: 1rem;

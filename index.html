@@ -21,6 +21,10 @@
       crossorigin="anonymous"
     ></script>
     <!-- JavaScript -->
+    <script
+      src="https://kit.fontawesome.com/fb08f18d0e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
     <!-- p5.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
@@ -59,27 +63,54 @@
         <p>✧</p>
         <div id="menu-div" class="popup" onclick="showMenu()">
           <div id="main-nav">
-            <a id="menu-btn" class="hero-info"><p>MENU</p>
-            </a>
+            <a id="menu-btn" class="hero-info"><p>MENU</p> </a>
           </div>
           <nav class="popupMenu" id="popMenu">
+            <div id="menu-header">
+              <span class="menu-line"></span>
+              <section>
+                <p><i class="fa-solid fa-xmark"></i></p>
+              </section>
+            </div>
+            <!-- <section id="header-text">
+              <h1>ALEXIS ORTIZ</h1>
+              <p>FRONT END DEVELOPER</p>
+            </section> -->
             <ul class="nav-list">
-              <li class="nav-item"><a class="item-anchor">ABOUT</a></li>
-              <li class="nav-item"><a class="item-anchor">WORK</a></li>
-              <li class="nav-item"><a class="item-anchor">CONTACT</a></li>
+              <li class="nav-item">
+                <button class="nav-button">
+                  ABOUT<span class="arrow-icon"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-button">
+                  WORK<span class="arrow-icon"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-button">
+                  CONTACT<span class="arrow-icon"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></span>
+                </button>
+              </li>
             </ul>
             <ul id="social-nav" class="nav-list">
               <a>
-                <li id="first-list-item" class="nav-item">G</li>
+                <li id="first-list-item" class="social-item">Cover</li>
               </a>
               <a>
-                <li class="nav-item">L</li>
+                <li class="social-item">Resume</li>
               </a>
               <a>
-                <li class="nav-item">C</li>
+                <li class="social-item">LinkedIn</li>
               </a>
               <a>
-                <li class="nav-item">R</li>
+                <li class="social-item">Github</li>
               </a>
             </ul>
           </nav>
