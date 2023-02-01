@@ -58,6 +58,14 @@ h6 {
   isolation: isolate;
 }
 
+@font-face {
+  font-family: "Eureka Endeavour";
+  src: url("EurekaEndeavour-Regular.eot");
+  src: url("EurekaEndeavour-Regular.eot?#iefix") format("embedded-opentype"), url("EurekaEndeavour-Regular.woff2") format("woff2"), url("EurekaEndeavour-Regular.woff") format("woff"), url("Assets/Fonts/EurekaEndeavour-Regular.ttf") format("truetype"), url("EurekaEndeavour-Regular.svg#EurekaEndeavour-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #151118;
@@ -75,7 +83,6 @@ header {
   color: #F8F6F4;
   font-size: 1.9rem;
   background-image: linear-gradient(180deg, hsl(274deg, 17%, 8%) 0%, hsl(274deg, 17%, 8%) 10%, hsl(274deg, 17%, 8%) 20%, hsl(274deg, 17%, 8%) 30%, hsl(274deg, 17%, 8%) 40%, hsl(274deg, 17%, 8%) 50%, hsl(250deg, 29%, 9%) 100%);
-  padding: 4rem;
 }
 header #top-nav {
   font-size: 2.2rem;
@@ -177,7 +184,6 @@ header #top-nav .popup .popupMenu {
   flex-direction: column;
   justify-content: space-between;
   min-width: 500px;
-  width: 200px;
   height: 85vh;
   background: rgba(21, 17, 24, 0.2);
   backdrop-filter: blur(65.5px);
@@ -204,11 +210,11 @@ header .name-div {
   justify-content: space-between;
   align-items: center;
   justify-content: center;
+  font-family: "Eureka Endeavour";
 }
 header .hero-name {
   text-align: center;
   padding: 0 1rem;
-  font-family: "Montserrat", sans-serif;
   font-size: clamp(4rem, 30vmin, 7rem);
   letter-spacing: 8px;
   font-weight: 700;

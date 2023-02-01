@@ -2,6 +2,7 @@
 @import "mixins";
 @import "reset";
 @import "menu.css";
+@import "font-imports";
 
 body {
   font-family: $display-font;
@@ -29,7 +30,6 @@ header {
     hsl(274deg 17% 8%) 50%,
     hsl(250deg 29% 9%) 100%
   );
-  padding: 4rem;
 
   #top-nav {
     font-size: 2.2rem;
@@ -125,7 +125,6 @@ header {
     .popup .popupMenu {
       @include display-column;
       min-width: 500px;
-      width: 200px;
       height: 85vh;
       background: rgba(21, 17, 24, 0.2);
       // box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
@@ -155,12 +154,12 @@ header {
   .name-div {
     @include display-row;
     justify-content: center;
+    font-family: 'Eureka Endeavour';
   }
 
   .hero-name {
     text-align: center;
     padding: 0 1rem;
-    font-family: $display-font;
     font-size: clamp(4rem, 30vmin, 7rem);
     letter-spacing: 8px;
     font-weight: 700;

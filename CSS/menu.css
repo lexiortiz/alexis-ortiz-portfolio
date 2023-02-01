@@ -1,10 +1,4 @@
 /* ** MAIN MENU ** */
-/* .menu-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
-
 #menu-header {
     display: flex;
     flex-direction: row;
@@ -18,7 +12,7 @@
 .menu-line {
     width: 100%;
     margin-right: 3rem;
-    height: 3px;
+    height: 1px;
     background-color: #fffdfb;
 }
 
@@ -35,8 +29,10 @@
 } */
 
 .nav-list {
-    color: white;
+    color: #fffdfb;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-item {
@@ -55,7 +51,7 @@
     width: 100%;
     background-color: transparent;
     border: none;
-    color: white;
+    color: #fffdfb;
     cursor: pointer;
     font-size: 5.6rem;
     padding: 0;
@@ -65,14 +61,14 @@
     background-color: #fffdfb;
     background-image: linear-gradient(to bottom,
             #fffdfb 20%,
-            #2d59db 55%);
+            hsla(236, 85%, 82%, 0.89) 55%);
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     --bg-size: 200%;
-    --color-one: #6688ef;
-    --color-two: hsla(215, 40%, 94%, 0.929);
-    --color-three: #2d59db;
+    --color-one: hsla(251, 72%, 50%, 0.943);
+    --color-two: hsla(215, 40%, 94%, 0.829);
+    --color-three: hsla(290, 26%, 54%, 0.833);
     background: linear-gradient(90deg,
             var(--color-one),
             var(--color-two),
@@ -82,7 +78,7 @@
     -webkit-background-clip: text;
     animation: move-bg 12s infinite linear reverse;
     background-clip: text;
-    /* text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.77); */
+    text-shadow: 0px 0px 2px hsla(236, 63%, 33%, 0.17);
 }
 
 .arrow-icon {
@@ -93,8 +89,8 @@
 .social-item:after {
     content: "";
     position: absolute;
-    width: 3px;
-    height: 3px;
+    width: 2px;
+    height: 2px;
     left: 0;
     bottom: 0;
     z-index: 9;
@@ -109,7 +105,7 @@
 .social-item:focus:after {
     width: 100%;
     background: hsla(30, 22%, 96%, 0.8);
-    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -138,6 +134,6 @@
 }
 
 .social-item:hover {
-    font-weight: 500;
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.862);
+    /* font-weight: 500; */
+    text-shadow: 0px 0px 2px hsla(251, 72%, 50%, 0.943);
 }
