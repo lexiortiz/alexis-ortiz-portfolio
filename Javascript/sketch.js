@@ -1,7 +1,4 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/17WoOqgXsRM
+// Hero Starry Animation 
 
 const stars = [];
 let speed;
@@ -9,7 +6,7 @@ let canvasColor;
 let starColor;
 
 function setup() {
-  canvasColor = loadImage('/Assets/starry.jpg');
+  canvasColor = loadImage('/Assets/starry5.png');
   let canvas = createCanvas(windowWidth, windowHeight);
   // Move canvas to hero canvas div
   canvas.parent('hero-canvas-div');
