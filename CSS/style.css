@@ -82,7 +82,7 @@ header {
   min-height: 100vh;
   color: #F8F6F4;
   font-size: 1.9rem;
-  background-image: linear-gradient(180deg, hsl(274deg, 17%, 8%) 0%, hsl(274deg, 17%, 8%) 10%, hsl(274deg, 17%, 8%) 20%, hsl(274deg, 17%, 8%) 30%, hsl(274deg, 17%, 8%) 40%, hsl(274deg, 17%, 8%) 50%, hsl(250deg, 29%, 9%) 100%);
+  background-image: linear-gradient(180deg, hsl(270deg, 15%, 5%) 0%, hsl(276deg, 17%, 6%) 10%, hsl(270deg, 19%, 6%) 20%, hsl(276deg, 14%, 7%) 30%, hsl(270deg, 16%, 7%) 40%, hsl(274deg, 17%, 8%) 50%, hsl(276deg, 23%, 9%) 60%, hsl(275deg, 26%, 9%) 70%, hsl(276deg, 31%, 10%) 80%, hsl(273deg, 35%, 10%) 90%, hsl(274deg, 38%, 11%) 100%);
 }
 header #top-nav {
   font-size: 2.2rem;
@@ -125,7 +125,7 @@ header #top-nav .popup {
 }
 header #top-nav .popup .popupNumber {
   background: rgba(21, 17, 24, 0.2);
-  box-shadow: 0 8px 32px 0 hsla(236deg, 63%, 33%, 0.37);
+  box-shadow: 0 8px 32px 0 hsla(274deg, 85%, 34%, 0.37);
   backdrop-filter: blur(25.5px);
   -webkit-backdrop-filter: blur(10.5px);
   border-radius: 10px;
@@ -153,11 +153,11 @@ header #top-nav .popup .popupNumber .c-info:hover {
 }
 header #top-nav .popup .popupEmail {
   background: rgba(21, 17, 24, 0.2);
-  box-shadow: 0 8px 32px 0 hsla(236deg, 63%, 33%, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(97, 13, 160, 0.368627451);
   backdrop-filter: blur(25.5px);
   -webkit-backdrop-filter: blur(10.5px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.1803921569);
   white-space: nowrap;
   visibility: hidden;
   border-radius: 8px;
@@ -218,8 +218,8 @@ header .hero-name {
   font-size: clamp(4rem, 30vmin, 7.9rem);
   letter-spacing: 3px;
   font-weight: 500;
-  color: hsla(250deg, 20%, 82%, 0.943);
-  text-shadow: 0px 0px 2px hsla(251deg, 72%, 50%, 0.123);
+  color: #f8f6f4;
+  text-shadow: 0px 0px 2px hsla(0deg, 0%, 95%, 0.6);
 }
 header #hero-center {
   text-align: center;
@@ -233,8 +233,8 @@ header #hero-center #hero-canvas-div {
   overflow: hidden;
   background-color: transparent;
   background-image: url("/Assets/starry5.png");
-  background-size: 100%;
-  background-position: top;
+  background-size: 120%;
+  background-position: left top;
 }
 header #hero-scroll {
   overflow: hidden;
@@ -268,7 +268,7 @@ header #hero-scroll #hero-role {
   padding-top: 2rem;
   font-size: 1.9rem;
   min-height: 99vh;
-  background-image: linear-gradient(180deg, hsl(253deg, 30%, 9%) 0%, hsl(248deg, 34%, 10%) 11%, hsl(244deg, 37%, 10%) 22%, hsl(241deg, 40%, 11%) 33%, hsl(239deg, 43%, 11%) 44%, hsl(237deg, 47%, 11%) 56%, hsl(235deg, 52%, 11%) 67%, hsl(234deg, 56%, 12%) 78%, hsl(232deg, 60%, 12%) 89%, hsl(231deg, 64%, 12%) 100%);
+  background-image: linear-gradient(180deg, hsl(274deg, 38%, 11%) 0%, hsl(274deg, 40%, 11%) 10%, hsl(275deg, 43%, 12%) 20%, hsl(273deg, 46%, 12%) 30%, hsl(275deg, 48%, 13%) 40%, hsl(274deg, 50%, 13%) 50%, hsl(271deg, 53%, 14%) 60%, hsl(269deg, 56%, 15%) 70%, hsl(266deg, 59%, 16%) 80%, hsl(264deg, 61%, 17%) 90%, hsl(262deg, 63%, 18%) 100%);
 }
 #work-section #work-sect-title {
   font-family: "Fira Sans Condensed", sans-serif;
@@ -309,7 +309,7 @@ header #hero-scroll #hero-role {
   font-size: 1.9rem;
   padding: 3rem;
   padding-top: 4rem;
-  background-image: linear-gradient(180deg, hsl(231deg, 64%, 12%) 0%, hsl(230deg, 64%, 13%) 10%, hsl(230deg, 64%, 14%) 20%, hsl(230deg, 62%, 16%) 30%, hsl(229deg, 63%, 17%) 40%, hsl(229deg, 63%, 18%) 50%, hsl(228deg, 63%, 19%) 60%, hsl(228deg, 63%, 20%) 70%, hsl(228deg, 62%, 22%) 80%, hsl(228deg, 62%, 23%) 90%, #172664 100%);
+  background-image: linear-gradient(180deg, hsl(262deg, 63%, 18%) 0%, hsl(261deg, 65%, 19%) 10%, hsl(260deg, 66%, 20%) 20%, hsl(259deg, 68%, 21%) 30%, hsl(258deg, 71%, 22%) 40%, hsl(257deg, 72%, 23%) 50%, hsl(256deg, 74%, 24%) 60%, hsl(256deg, 76%, 26%) 70%, hsl(255deg, 79%, 28%) 80%, hsl(254deg, 80%, 30%) 90%, hsl(254deg, 83%, 31%) 100%);
 }
 #about-section #about-h1-div {
   display: flex;
@@ -349,7 +349,7 @@ header #hero-scroll #hero-role {
   min-height: 89vh;
   font-size: 1.9rem;
   padding: 3rem;
-  background-image: linear-gradient(180deg, hsl(228deg, 63%, 24%) 0%, hsl(229deg, 62%, 22%) 10%, hsl(229deg, 63%, 19%) 20%, hsl(230deg, 63%, 17%) 30%, hsl(230deg, 64%, 14%) 40%, hsl(231deg, 64%, 12%) 50%, hsl(231deg, 59%, 12%) 60%, hsl(233deg, 55%, 11%) 70%, hsl(234deg, 50%, 11%) 80%, hsl(235deg, 44%, 11%) 90%, hsl(237deg, 40%, 10%) 100%);
+  background-image: linear-gradient(180deg, hsl(254deg, 83%, 31%) 0%, hsl(253deg, 84%, 34%) 9%, hsl(253deg, 86%, 36%) 18%, hsl(252deg, 87%, 39%) 27%, hsl(252deg, 88%, 40%) 36%, hsl(252deg, 88%, 38%) 45%, hsl(251deg, 87%, 36%) 55%, hsl(251deg, 86%, 34%) 64%, hsl(251deg, 85%, 32%) 73%, hsl(251deg, 84%, 30%) 82%, hsl(250deg, 85%, 28%) 91%, hsl(250deg, 84%, 26%) 100%);
 }
 #contact-section #contact-title {
   font-family: "Fira Sans Condensed", sans-serif;
@@ -426,7 +426,7 @@ footer {
   color: gray;
   font-size: 1.8rem;
   padding: 2rem 0;
-  background-image: linear-gradient(180deg, hsl(237deg, 40%, 10%) 0%, hsl(243deg, 37%, 10%) 11%, hsl(253deg, 29%, 9%) 44%, hsl(260deg, 26%, 9%) 56%, hsl(262deg, 24%, 9%) 67%, hsl(264deg, 23%, 9%) 78%, hsl(270deg, 19%, 8%) 100%);
+  background-image: linear-gradient(180deg, hsl(250deg, 83%, 26%) 0%, hsl(250deg, 83%, 25%) 11%, hsl(250deg, 82%, 24%) 22%, hsl(250deg, 81%, 23%) 33%, hsl(250deg, 81%, 22%) 44%, hsl(250deg, 79%, 21%) 56%, hsl(250deg, 78%, 20%) 67%, hsl(251deg, 77%, 19%) 78%, hsl(251deg, 75%, 17%) 89%, hsl(251deg, 72%, 16%) 100%);
 }
 
 /* Add animation (fade in the popup) */
