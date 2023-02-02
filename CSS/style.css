@@ -186,6 +186,7 @@ header #top-nav .popup .popupMenu {
   min-width: 500px;
   height: 85vh;
   background: rgba(21, 17, 24, 0.2);
+  box-shadow: 0 8px 22px 0 rgba(97, 13, 160, 0.368627451);
   backdrop-filter: blur(65.5px);
   -webkit-backdrop-filter: blur(10.5px);
   border-radius: 10px;
@@ -215,6 +216,7 @@ header .name-div {
 header .hero-name {
   text-align: center;
   padding: 0 1rem;
+  margin: -3rem 0;
   font-size: clamp(4rem, 30vmin, 7.9rem);
   letter-spacing: 3px;
   font-weight: 500;
@@ -271,11 +273,13 @@ header #hero-scroll #hero-role {
   background-image: linear-gradient(180deg, hsl(274deg, 38%, 11%) 0%, hsl(274deg, 40%, 11%) 10%, hsl(275deg, 43%, 12%) 20%, hsl(273deg, 46%, 12%) 30%, hsl(275deg, 48%, 13%) 40%, hsl(274deg, 50%, 13%) 50%, hsl(271deg, 53%, 14%) 60%, hsl(269deg, 56%, 15%) 70%, hsl(266deg, 59%, 16%) 80%, hsl(264deg, 61%, 17%) 90%, hsl(262deg, 63%, 18%) 100%);
 }
 #work-section #work-sect-title {
+  font-size: 1.9rem;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 500;
   font-size: 6rem;
 }
 #work-section #work-desc {
+  text-align: center;
   padding: 3rem;
 }
 #work-section .cards {

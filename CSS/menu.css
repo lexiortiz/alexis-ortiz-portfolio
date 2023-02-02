@@ -1,5 +1,5 @@
 /* ** MAIN MENU ** */
-#menu-header {
+/* #menu-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,13 +7,12 @@
     font-size: 3rem;
     margin-right: 1rem;
     color: #fffdfb;
-}
+} */
 
 .menu-line {
     width: 100%;
     margin-right: 3rem;
     height: 1px;
-    background-color: #fffdfb;
 }
 
 /* #header-text h1 {
@@ -29,7 +28,7 @@
 } */
 
 .nav-list {
-    color: #fffdfb;
+    color: #F8F6F4;
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -51,7 +50,7 @@
     width: 100%;
     background-color: transparent;
     border: none;
-    color: #fffdfb;
+    color: #F8F6F4;
     cursor: pointer;
     font-size: 5.6rem;
     padding: 0;
@@ -66,9 +65,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     --bg-size: 200%;
-    --color-one: hsla(251, 72%, 50%, 0.943);
+    --color-one: hsla(262, 72%, 50%, 0.943);
     --color-two: hsla(215, 40%, 94%, 0.829);
-    --color-three: hsla(290, 26%, 54%, 0.833);
+    --color-three: rgba(75, 11, 178, 0.833);
     background: linear-gradient(90deg,
             var(--color-one),
             var(--color-two),
@@ -83,7 +82,7 @@
 
 .arrow-icon {
     transform: rotate(-45deg);
-    color: hsla(30, 20%, 96%, 0.877);
+    color: hsla(30, 22%, 96%, 0.9);
 }
 
 .social-item:after {
@@ -105,7 +104,7 @@
 .social-item:focus:after {
     width: 100%;
     background: hsla(30, 22%, 96%, 0.8);
-    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;

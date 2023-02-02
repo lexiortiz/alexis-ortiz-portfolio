@@ -131,7 +131,7 @@ header {
       min-width: 500px;
       height: 85vh;
       background: rgba(21, 17, 24, 0.2);
-      // box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
+      box-shadow: 0 8px 22px 0 #610da05e;
       backdrop-filter: blur(65.5px);
       -webkit-backdrop-filter: blur(10.5px);
       border-radius: 10px;
@@ -164,6 +164,7 @@ header {
   .hero-name {
     text-align: center;
     padding: 0 1rem;
+    margin: -3rem 0;
     font-size: clamp(4rem, 30vmin, 7.9rem);
     letter-spacing: 3px;
     font-weight: 500;
@@ -250,12 +251,14 @@ header {
   );
 
   #work-sect-title {
+    font-size: 1.9rem;
     font-family: $heading-font;
     font-weight: 500;
     font-size: 6rem;
   }
 
   #work-desc {
+    text-align: center;
     padding: 3rem;
   }
 
