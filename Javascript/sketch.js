@@ -9,6 +9,7 @@ let canvasColor;
 let starColor;
 
 function setup() {
+  canvasColor = loadImage('/Assets/starry.jpg');
   let canvas = createCanvas(windowWidth, windowHeight);
   // Move canvas to hero canvas div
   canvas.parent('hero-canvas-div');
@@ -22,13 +23,11 @@ function setup() {
 // function draw() {
 //   // Control speed of stars
 //   speed = map(200, 0, width, 0, 20);
-//   // Background color
-//   canvasColor = color('rgba(23, 16, 28, 0.5)');
 //   // Star color
 //   starColor = color('rgb(248, 246, 244)');
 //   background(canvasColor);
 //   // Begin from center of canvas
-//   translate(width / 2, height / 2);
+//   translate(width / 2, height / 3);
 //   // Create and update the stars
 //   for (var i = 0; i < stars.length; i++) {
 //     stars[i].update();
@@ -56,13 +55,13 @@ function Star() {
   }
 
   this.show = function() {
-    fill('#999');
+    fill('#fffdfb');
     noStroke();
     // Start animation from far away
     var sx = map(this.x / this.z, 0, 1, 0, width);
     var sy = map(this.y / this.z, 0, 1, 0, height);
     // Close stars are big, far are small
-    var r = map(this.z, 0, width, 12, 0);
+    var r = map(this.z, 0, width, 6, 0);
     ellipse(sx, sy, r, r);
     // Create star lines 
     var px = map(this.x / this.pz, 0, 1, 0, width);

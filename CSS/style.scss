@@ -154,19 +154,17 @@ header {
   .name-div {
     @include display-row;
     justify-content: center;
-    font-family: 'Eureka Endeavour';
+    font-family: "Eureka Endeavour";
   }
 
   .hero-name {
     text-align: center;
     padding: 0 1rem;
-    font-size: clamp(4rem, 30vmin, 7rem);
-    letter-spacing: 5px;
-    font-weight: 700;
-    font-stretch: 400%;
+    font-size: clamp(4rem, 30vmin, 7.9rem);
+    letter-spacing: 3px;
+    font-weight: 500;
     color: hsla(250, 20%, 82%, 0.943);
-
-    text-shadow: 0px 0px 2px hsla(251, 72%, 50%, 0.2);
+    text-shadow: 0px 0px 2px hsla(251, 72%, 50%, 0.123);
   }
 
   #hero-center {
@@ -179,6 +177,13 @@ header {
       border: 1px solid $cultured-faded;
       border-radius: 120px;
       overflow: hidden;
+      background-color: transparent;
+      background-image: url('/Assets/blurrify.jpg');
+      background-size: 100%;
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-attachment: fixed;background-blend-mode: darken;
+      box-shadow: inset 0 0 0 2000px rgba(21, 17, 24, 0.95);
     }
   }
 
@@ -192,6 +197,30 @@ header {
       font-size: clamp(4rem, 45vmin, 4.5rem);
       white-space: nowrap;
       // @include hero-role-animation;
+      background-color: #fffdfb;
+      background-image: linear-gradient(
+        to bottom,
+        #fffdfb 20%,
+        hsla(236, 85%, 82%, 0.89) 55%
+      );
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      --bg-size: 200%;
+      --color-one: rgba(237, 237, 237, 0.8);
+      --color-two: hsla(215, 40%, 94%, 0.8);
+      background: linear-gradient(
+          90deg,
+          var(--color-one),
+          var(--color-two),
+          var(--color-one)
+        )
+        0 0 / var(--bg-size) 80%;
+      color: transparent;
+      -webkit-background-clip: text;
+      animation: move-bg 12s infinite linear reverse;
+      background-clip: text;
+      text-shadow: 0px 0px 2px hsla(236, 63%, 33%, 0.17);
     }
   }
 }
