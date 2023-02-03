@@ -184,9 +184,9 @@ header #top-nav .popup .popupMenu {
   flex-direction: column;
   justify-content: space-between;
   min-width: 500px;
-  height: 85vh;
+  height: 75vh;
   background: rgba(21, 17, 24, 0.2);
-  box-shadow: 0 8px 22px 0 rgba(97, 13, 160, 0.368627451);
+  box-shadow: 0 0 22px 0 rgba(97, 13, 160, 0.368627451);
   backdrop-filter: blur(65.5px);
   -webkit-backdrop-filter: blur(10.5px);
   border-radius: 10px;
@@ -242,25 +242,22 @@ header #hero-scroll {
   overflow: hidden;
 }
 header #hero-scroll #hero-role {
-  margin: 0 -0.9rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
   font-weight: 400;
-  letter-spacing: 4px;
-  font-size: clamp(4rem, 45vmin, 4.5rem);
+  letter-spacing: 3px;
+  font-size: 220%;
   white-space: nowrap;
-  background-color: #fffdfb;
-  background-image: linear-gradient(to bottom, #fffdfb 20%, hsla(236deg, 85%, 82%, 0.89) 55%);
+  background-color: #F8F6F4;
   background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  --bg-size: 200%;
-  --color-one: rgba(237, 237, 237, 0.8);
-  --color-two: hsla(215, 40%, 94%, 0.8);
+  --bg-size: 300%;
+  --color-one: hsla(0, 0%, 65%, 0.9);
+  --color-two: hsla(0, 0%, 98%, 0.8);
   background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0/var(--bg-size) 80%;
   color: transparent;
   -webkit-background-clip: text;
   animation: move-bg 12s infinite linear reverse;
   background-clip: text;
-  text-shadow: 0px 0px 2px hsla(236deg, 63%, 33%, 0.17);
 }
 
 #work-section {
@@ -272,17 +269,16 @@ header #hero-scroll #hero-role {
   min-height: 99vh;
   background-image: linear-gradient(180deg, hsl(274deg, 38%, 11%) 0%, hsl(274deg, 40%, 11%) 10%, hsl(275deg, 43%, 12%) 20%, hsl(273deg, 46%, 12%) 30%, hsl(275deg, 48%, 13%) 40%, hsl(274deg, 50%, 13%) 50%, hsl(271deg, 53%, 14%) 60%, hsl(269deg, 56%, 15%) 70%, hsl(266deg, 59%, 16%) 80%, hsl(264deg, 61%, 17%) 90%, hsl(262deg, 63%, 18%) 100%);
 }
-#work-section #work-sect-title {
-  font-size: 1.9rem;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: 500;
-  font-size: 6rem;
-}
 #work-section #work-desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.1rem;
   text-align: center;
   padding: 3rem;
 }
 #work-section .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 #work-section .cards .card {
