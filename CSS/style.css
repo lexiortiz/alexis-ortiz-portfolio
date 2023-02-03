@@ -242,6 +242,7 @@ header #hero-scroll {
   overflow: hidden;
 }
 header #hero-scroll #hero-role {
+  line-height: 130%;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 400;
@@ -251,7 +252,7 @@ header #hero-scroll #hero-role {
   background-color: #F8F6F4;
   background-size: 100%;
   --bg-size: 300%;
-  --color-one: hsla(0, 0%, 65%, 0.9);
+  --color-one: hsla(0, 0%, 65%, 0.947);
   --color-two: hsla(0, 0%, 98%, 0.8);
   background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0/var(--bg-size) 80%;
   color: transparent;
@@ -269,11 +270,17 @@ header #hero-scroll #hero-role {
   min-height: 99vh;
   background-image: linear-gradient(180deg, hsl(274deg, 38%, 11%) 0%, hsl(274deg, 40%, 11%) 10%, hsl(275deg, 43%, 12%) 20%, hsl(273deg, 46%, 12%) 30%, hsl(275deg, 48%, 13%) 40%, hsl(274deg, 50%, 13%) 50%, hsl(271deg, 53%, 14%) 60%, hsl(269deg, 56%, 15%) 70%, hsl(266deg, 59%, 16%) 80%, hsl(264deg, 61%, 17%) 90%, hsl(262deg, 63%, 18%) 100%);
 }
-#work-section #work-desc {
+#work-section .work-desc {
   font-family: "Montserrat", sans-serif;
   font-size: 2.1rem;
-  text-align: center;
+  margin: auto;
   padding: 3rem;
+}
+#work-section .left {
+  text-align: left;
+}
+#work-section .right {
+  text-align: right;
 }
 #work-section .cards {
   display: flex;
@@ -315,10 +322,17 @@ header #hero-scroll #hero-role {
   display: flex;
   align-items: center;
 }
-#about-section #about-h1-div h1 {
-  font-size: 8rem;
+#about-section #about-h1-div #about-h1 {
   font-family: "Fira Sans Condensed", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 6rem;
   letter-spacing: 2px;
+}
+#about-section #about-h1-div #about-h1 #icon {
+  padding: 0 1rem;
+  width: 100px;
 }
 #about-section #about-h1-div #element-div {
   padding: 1rem;
@@ -326,7 +340,8 @@ header #hero-scroll #hero-role {
   color: orange;
 }
 #about-section #intro-div {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
+  margin-right: 4rem;
 }
 #about-section #read-more {
   margin-top: 3rem;

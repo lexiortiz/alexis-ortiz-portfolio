@@ -58,9 +58,6 @@
 
 .nav-button:hover {
     background-color: #fffdfb;
-    background-image: linear-gradient(to bottom,
-            #fffdfb 20%,
-            hsla(236, 85%, 82%, 0.89) 55%);
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;

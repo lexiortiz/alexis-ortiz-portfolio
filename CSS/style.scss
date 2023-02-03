@@ -193,9 +193,12 @@ header {
   }
 
   #hero-scroll {
+    // border: 1px solid $cultured;
     overflow: hidden;
 
     #hero-role {
+      // border: 1px solid rgba(75, 11, 178, 0.833);
+      line-height: 130%;
       font-family: $display-font;
       text-align: center;
       font-weight: 400;
@@ -206,7 +209,7 @@ header {
       background-size: 100%;
       // background-attachment: fixed;
       --bg-size: 300%;
-      --color-one: hsla(0, 0%, 65%, 0.9);
+      --color-one: hsla(0, 0%, 65%, 0.947);
       --color-two: hsla(0, 0%, 98%, 0.8);
       background: linear-gradient(
           90deg,
@@ -243,13 +246,21 @@ header {
     hsl(262deg 63% 18%) 100%
   );
 
-  #work-desc {
+  .work-desc {
     font-family: $display-font;
     font-size: 2.1rem;
-    text-align: center;
+    margin: auto;
     padding: 3rem;
   }
 
+  .left {
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
+  }
+  
   .cards {
     display: flex;
     justify-content: center;
@@ -313,10 +324,16 @@ header {
     display: flex;
     align-items: center;
 
-    h1 {
-      font-size: 8rem;
+    #about-h1 {
       font-family: $heading-font;
-      letter-spacing: $letter-spacing;
+      @include display-row;
+      font-size: 6rem;
+      letter-spacing: 2px;
+
+      #icon {
+        padding: 0 1rem;
+        width: 100px;
+      }
     }
     #element-div {
       padding: 1rem;
@@ -325,7 +342,8 @@ header {
     }
   }
   #intro-div {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    margin-right: 4rem;
   }
   #read-more {
     margin-top: 3rem;
