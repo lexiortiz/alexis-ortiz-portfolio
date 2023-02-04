@@ -34,10 +34,11 @@ header {
     hsl(273deg 35% 10%) 90%,
     hsl(274deg 38% 11%) 100%
   );
+  padding: 2rem;
 
   #top-nav {
     font-size: 2.2rem;
-    padding: 2rem $spacing;
+    padding: 2rem 4rem;
     @include display-row;
 
     ul {
@@ -158,7 +159,7 @@ header {
   .name-div {
     @include display-row;
     justify-content: center;
-    font-family: "Eureka Endeavour";
+    font-family: $logo-font;
   }
 
   .hero-name {
@@ -172,9 +173,73 @@ header {
     text-shadow: 0px 0px 2px hsla(0, 0%, 95%, 0.6);
   }
 
+  #hero-scroll {
+    // border: 1px solid $cultured;
+    overflow: hidden;
+    // display: none;
+    margin: 0 $spacing;
+    padding: 3rem;
+
+    #hero-role {
+      margin-top: -4rem;
+      font-family: $display-font;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 3px;
+      font-size: 2.6rem;
+      white-space: nowrap;
+      background-color: $cultured;
+      background-size: 100%;
+      --bg-size: 300%;
+      --color-one: hsla(0, 0%, 65%, 0.947);
+      --color-two: hsla(0, 0%, 98%, 0.8);
+      background: linear-gradient(
+          90deg,
+          var(--color-one),
+          var(--color-two),
+          var(--color-one)
+        )
+        0 0 / var(--bg-size) 80%;
+      color: transparent;
+      -webkit-background-clip: text;
+      animation: move-bg 12s infinite linear reverse;
+      background-clip: text;
+    }
+
+    .fancy-div {
+      // width: 100%;
+      @include display-row;
+      // display: none;
+
+      .twinkleIcon {
+        // padding: 3rem;
+      }
+
+      .line {
+        margin: 3rem;
+        @include line;
+      }
+    }
+  }
+
   #hero-center {
+    display: flex;
     text-align: center;
-    padding: 0 $spacing;
+    margin: 0 $spacing;
+    margin-top: -2rem;
+
+    .fancy-div {
+      @include display-row;
+
+      .line {
+        margin: 3rem;
+        @include line;
+      }
+
+      .twinkleIcon {
+        padding: 3rem;
+      }
+    }
 
     #hero-canvas-div {
       width: 100%;
@@ -191,44 +256,10 @@ header {
       // box-shadow: inset 0 0 0 2000px rgba(21, 17, 24, 0.45);
     }
   }
-
-  #hero-scroll {
-    // border: 1px solid $cultured;
-    overflow: hidden;
-
-    #hero-role {
-      // border: 1px solid rgba(75, 11, 178, 0.833);
-      line-height: 130%;
-      font-family: $display-font;
-      text-align: center;
-      font-weight: 400;
-      letter-spacing: 3px;
-      font-size: 220%;
-      white-space: nowrap;
-      background-color: $cultured;
-      background-size: 100%;
-      // background-attachment: fixed;
-      --bg-size: 300%;
-      --color-one: hsla(0, 0%, 65%, 0.947);
-      --color-two: hsla(0, 0%, 98%, 0.8);
-      background: linear-gradient(
-          90deg,
-          var(--color-one),
-          var(--color-two),
-          var(--color-one)
-        )
-        0 0 / var(--bg-size) 80%;
-      color: transparent;
-      -webkit-background-clip: text;
-      animation: move-bg 12s infinite linear reverse;
-      background-clip: text;
-    }
-  }
 }
 
 #work-section {
   @include display-column;
-  padding-top: 2rem;
   font-size: 1.9rem;
   min-height: 99vh;
   background-image: linear-gradient(
@@ -245,12 +276,18 @@ header {
     hsl(264deg 61% 17%) 90%,
     hsl(262deg 63% 18%) 100%
   );
+  padding: 2rem;
 
   .work-desc {
-    font-family: $display-font;
-    font-size: 2.1rem;
-    margin: auto;
-    padding: 3rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 6rem;
+    padding: 2rem;
+  }
+
+  .center {
+    text-align: center;
   }
 
   .left {
@@ -260,7 +297,7 @@ header {
   .right {
     text-align: right;
   }
-  
+
   .cards {
     display: flex;
     justify-content: center;
@@ -303,7 +340,7 @@ header {
 #about-section {
   min-height: 99vh;
   font-size: 1.9rem;
-  padding: 3rem;
+  padding: 2rem;
   padding-top: 4rem;
   background-image: linear-gradient(
     180deg,
@@ -358,7 +395,7 @@ header {
 #contact-section {
   min-height: 89vh;
   font-size: 1.9rem;
-  padding: 3rem;
+  padding: 2rem;
   background-image: linear-gradient(
     180deg,
     hsl(254deg 83% 31%) 0%,

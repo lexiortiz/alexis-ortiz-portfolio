@@ -5,6 +5,8 @@ $display-font: 'Montserrat', sans-serif;
 $heading-font: 'Fira Sans Condensed', sans-serif;
 $body-font: 'Istok Web', sans-serif;
 $condensed-font: 'Meera Inimai', sans-serif;
+$special-font: 'Calypso';
+$logo-font: 'Eureka Endeavour';
 
 
 // ** COLORS **
@@ -12,7 +14,7 @@ $condensed-font: 'Meera Inimai', sans-serif;
 $primary-white: #fff;
 $cultured: #F8F6F4;
 $cultured-faded: hsla(30, 22%, 96%, 0.8);
-$white: #fffdfb;
+$white: rgb(255, 253, 251);
 $primary-black: #0b090a;
 $smokey-black: rgb(22, 18, 20);
 $raisin-black: #2D2529;
@@ -20,10 +22,10 @@ $xiketic: #151118;
 $dark-xiketic: rgb(23, 16, 28);
 
 // Main Colors
-$electricGrape: hsla(262, 72%, 50%, 0.943);
+$electricGrape: rgb(103, 36, 219);
 $summerNight: rgba(89, 79, 225, 0.833);
 $heliotrope: #AE4EF9;
-$mantis: #76D671; 
+$mantis: rgb(118, 214, 113); 
 
 // ** FORMATTING **
 $spacing: 3rem;

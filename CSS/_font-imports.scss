@@ -10,3 +10,16 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Calypso';
+    src: url('Calypso-Regular.eot');
+    src: url('Calypso-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Calypso-Regular.woff2') format('woff2'),
+        url('Calypso-Regular.woff') format('woff'),
+        url('Calypso-Regular.ttf') format('truetype'),
+        url('Calypso-Regular.svg#Calypso-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

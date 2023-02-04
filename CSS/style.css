@@ -66,6 +66,14 @@ h6 {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Calypso";
+  src: url("Calypso-Regular.eot");
+  src: url("Calypso-Regular.eot?#iefix") format("embedded-opentype"), url("Calypso-Regular.woff2") format("woff2"), url("Calypso-Regular.woff") format("woff"), url("Calypso-Regular.ttf") format("truetype"), url("Calypso-Regular.svg#Calypso-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #151118;
@@ -83,10 +91,11 @@ header {
   color: #F8F6F4;
   font-size: 1.9rem;
   background-image: linear-gradient(180deg, hsl(270deg, 15%, 5%) 0%, hsl(276deg, 17%, 6%) 10%, hsl(270deg, 19%, 6%) 20%, hsl(276deg, 14%, 7%) 30%, hsl(270deg, 16%, 7%) 40%, hsl(274deg, 17%, 8%) 50%, hsl(276deg, 23%, 9%) 60%, hsl(275deg, 26%, 9%) 70%, hsl(276deg, 31%, 10%) 80%, hsl(273deg, 35%, 10%) 90%, hsl(274deg, 38%, 11%) 100%);
+  padding: 2rem;
 }
 header #top-nav {
   font-size: 2.2rem;
-  padding: 2rem 3rem;
+  padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -223,31 +232,18 @@ header .hero-name {
   color: #f8f6f4;
   text-shadow: 0px 0px 2px hsla(0deg, 0%, 95%, 0.6);
 }
-header #hero-center {
-  text-align: center;
-  padding: 0 3rem;
-}
-header #hero-center #hero-canvas-div {
-  width: 100%;
-  max-height: 25rem;
-  border: 1px solid hsla(30deg, 22%, 96%, 0.8);
-  border-radius: 120px;
-  overflow: hidden;
-  background-color: transparent;
-  background-image: url("/Assets/starry5.png");
-  background-size: 120%;
-  background-position: left top;
-}
 header #hero-scroll {
   overflow: hidden;
+  margin: 0 3rem;
+  padding: 3rem;
 }
 header #hero-scroll #hero-role {
-  line-height: 130%;
+  margin-top: -4rem;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 400;
   letter-spacing: 3px;
-  font-size: 220%;
+  font-size: 2.6rem;
   white-space: nowrap;
   background-color: #F8F6F4;
   background-size: 100%;
@@ -260,21 +256,71 @@ header #hero-scroll #hero-role {
   animation: move-bg 12s infinite linear reverse;
   background-clip: text;
 }
+header #hero-scroll .fancy-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #hero-scroll .fancy-div .line {
+  margin: 3rem;
+  width: 100%;
+  height: 1px;
+  color: hsla(30deg, 22%, 96%, 0.8);
+  background-color: hsla(30deg, 22%, 96%, 0.8);
+  padding: 0 3px;
+}
+header #hero-center {
+  display: flex;
+  text-align: center;
+  margin: 0 3rem;
+  margin-top: -2rem;
+}
+header #hero-center .fancy-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #hero-center .fancy-div .line {
+  margin: 3rem;
+  width: 100%;
+  height: 1px;
+  color: hsla(30deg, 22%, 96%, 0.8);
+  background-color: hsla(30deg, 22%, 96%, 0.8);
+  padding: 0 3px;
+}
+header #hero-center .fancy-div .twinkleIcon {
+  padding: 3rem;
+}
+header #hero-center #hero-canvas-div {
+  width: 100%;
+  max-height: 25rem;
+  border: 1px solid hsla(30deg, 22%, 96%, 0.8);
+  border-radius: 120px;
+  overflow: hidden;
+  background-color: transparent;
+  background-image: url("/Assets/starry5.png");
+  background-size: 120%;
+  background-position: left top;
+}
 
 #work-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 2rem;
   font-size: 1.9rem;
   min-height: 99vh;
   background-image: linear-gradient(180deg, hsl(274deg, 38%, 11%) 0%, hsl(274deg, 40%, 11%) 10%, hsl(275deg, 43%, 12%) 20%, hsl(273deg, 46%, 12%) 30%, hsl(275deg, 48%, 13%) 40%, hsl(274deg, 50%, 13%) 50%, hsl(271deg, 53%, 14%) 60%, hsl(269deg, 56%, 15%) 70%, hsl(266deg, 59%, 16%) 80%, hsl(264deg, 61%, 17%) 90%, hsl(262deg, 63%, 18%) 100%);
+  padding: 2rem;
 }
 #work-section .work-desc {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.1rem;
-  margin: auto;
-  padding: 3rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 6rem;
+  padding: 2rem;
+}
+#work-section .center {
+  text-align: center;
 }
 #work-section .left {
   text-align: left;
@@ -314,7 +360,7 @@ header #hero-scroll #hero-role {
 #about-section {
   min-height: 99vh;
   font-size: 1.9rem;
-  padding: 3rem;
+  padding: 2rem;
   padding-top: 4rem;
   background-image: linear-gradient(180deg, hsl(262deg, 63%, 18%) 0%, hsl(261deg, 65%, 19%) 10%, hsl(260deg, 66%, 20%) 20%, hsl(259deg, 68%, 21%) 30%, hsl(258deg, 71%, 22%) 40%, hsl(257deg, 72%, 23%) 50%, hsl(256deg, 74%, 24%) 60%, hsl(256deg, 76%, 26%) 70%, hsl(255deg, 79%, 28%) 80%, hsl(254deg, 80%, 30%) 90%, hsl(254deg, 83%, 31%) 100%);
 }
@@ -363,7 +409,7 @@ header #hero-scroll #hero-role {
 #contact-section {
   min-height: 89vh;
   font-size: 1.9rem;
-  padding: 3rem;
+  padding: 2rem;
   background-image: linear-gradient(180deg, hsl(254deg, 83%, 31%) 0%, hsl(253deg, 84%, 34%) 9%, hsl(253deg, 86%, 36%) 18%, hsl(252deg, 87%, 39%) 27%, hsl(252deg, 88%, 40%) 36%, hsl(252deg, 88%, 38%) 45%, hsl(251deg, 87%, 36%) 55%, hsl(251deg, 86%, 34%) 64%, hsl(251deg, 85%, 32%) 73%, hsl(251deg, 84%, 30%) 82%, hsl(250deg, 85%, 28%) 91%, hsl(250deg, 84%, 26%) 100%);
 }
 #contact-section #contact-title {
