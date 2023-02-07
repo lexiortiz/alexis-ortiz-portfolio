@@ -91,7 +91,7 @@ header {
   color: #F8F6F4;
   font-size: 1.9rem;
   background-image: linear-gradient(180deg, hsl(270deg, 15%, 5%) 0%, hsl(276deg, 17%, 6%) 10%, hsl(270deg, 19%, 6%) 20%, hsl(276deg, 14%, 7%) 30%, hsl(270deg, 16%, 7%) 40%, hsl(274deg, 17%, 8%) 50%, hsl(276deg, 23%, 9%) 60%, hsl(275deg, 26%, 9%) 70%, hsl(276deg, 31%, 10%) 80%, hsl(273deg, 35%, 10%) 90%, hsl(274deg, 38%, 11%) 100%);
-  padding: 2rem;
+  padding: 0 2rem;
 }
 header #top-nav {
   font-size: 2.2rem;
@@ -260,14 +260,15 @@ header #hero-scroll .fancy-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 header #hero-scroll .fancy-div .line {
-  margin: 3rem;
   width: 100%;
   height: 1px;
   color: hsla(30deg, 22%, 96%, 0.8);
   background-color: hsla(30deg, 22%, 96%, 0.8);
   padding: 0 3px;
+  margin: 0 3rem;
 }
 header #hero-center {
   display: flex;
@@ -280,16 +281,10 @@ header #hero-center .fancy-div {
   justify-content: space-between;
   align-items: center;
 }
-header #hero-center .fancy-div .line {
-  margin: 3rem;
-  width: 100%;
-  height: 1px;
-  color: hsla(30deg, 22%, 96%, 0.8);
-  background-color: hsla(30deg, 22%, 96%, 0.8);
-  padding: 0 3px;
-}
 header #hero-center .fancy-div .twinkleIcon {
   padding: 3rem;
+  font-size: 2rem;
+  color: hsla(30deg, 22%, 96%, 0.8);
 }
 header #hero-center #hero-canvas-div {
   width: 100%;
@@ -310,32 +305,32 @@ header #hero-center #hero-canvas-div {
   font-size: 1.9rem;
   min-height: 99vh;
   background-image: linear-gradient(180deg, hsl(274deg, 38%, 11%) 0%, hsl(274deg, 40%, 11%) 10%, hsl(275deg, 43%, 12%) 20%, hsl(273deg, 46%, 12%) 30%, hsl(275deg, 48%, 13%) 40%, hsl(274deg, 50%, 13%) 50%, hsl(271deg, 53%, 14%) 60%, hsl(269deg, 56%, 15%) 70%, hsl(266deg, 59%, 16%) 80%, hsl(264deg, 61%, 17%) 90%, hsl(262deg, 63%, 18%) 100%);
-  padding: 2rem;
 }
 #work-section .work-desc {
-  font-size: 2.2rem;
-  font-weight: 400;
   letter-spacing: 1px;
   margin: 6rem;
-  padding: 2rem;
-}
-#work-section .center {
   text-align: center;
+  color: hsla(30deg, 22%, 96%, 0.8);
+  font-size: 2.4rem;
 }
-#work-section .left {
-  text-align: left;
+#work-section .work-desc span {
+  display: block;
+  font-family: "Montserrat", sans-serif;
 }
-#work-section .right {
-  text-align: right;
+#work-section .work-desc p {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 #work-section .cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  padding: 0 6rem;
+  margin-bottom: 3rem;
 }
-#work-section .cards .card {
-  padding: 3rem;
+#work-section .cards .card a {
+  text-decoration: none;
+  color: #F8F6F4;
 }
 #work-section .cards .card .project-header {
   text-align: center;
@@ -350,18 +345,28 @@ header #hero-center #hero-canvas-div {
   color: hsla(30deg, 22%, 96%, 0.8);
 }
 #work-section .cards .card .project-preview {
-  border-top: 1px solid hsla(30deg, 22%, 96%, 0.8);
-  padding-top: 1rem;
-  border-bottom: 1px solid hsla(30deg, 22%, 96%, 0.8);
-  padding-bottom: 1rem;
-  margin: 1rem -3rem;
+  border: 1px solid hsla(30deg, 22%, 96%, 0.8);
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem;
+}
+#work-section .cards .card .project-preview .project-img {
+  border-radius: 10px;
+}
+#work-section .cards .card:hover .project-preview {
+  border: 1px solid transparent;
+}
+#work-section .cards .card:hover .project-img {
+  border: 1px solid transparent;
+  border-radius: 50%;
 }
 
 #about-section {
+  display: flex;
+  flex-direction: column;
   min-height: 99vh;
-  font-size: 1.9rem;
-  padding: 2rem;
-  padding-top: 4rem;
+  font-size: 2rem;
+  padding: 6rem;
   background-image: linear-gradient(180deg, hsl(262deg, 63%, 18%) 0%, hsl(261deg, 65%, 19%) 10%, hsl(260deg, 66%, 20%) 20%, hsl(259deg, 68%, 21%) 30%, hsl(258deg, 71%, 22%) 40%, hsl(257deg, 72%, 23%) 50%, hsl(256deg, 74%, 24%) 60%, hsl(256deg, 76%, 26%) 70%, hsl(255deg, 79%, 28%) 80%, hsl(254deg, 80%, 30%) 90%, hsl(254deg, 83%, 31%) 100%);
 }
 #about-section #about-h1-div {
@@ -370,24 +375,17 @@ header #hero-center #hero-canvas-div {
 }
 #about-section #about-h1-div #about-h1 {
   font-family: "Fira Sans Condensed", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 6rem;
-  letter-spacing: 2px;
-}
-#about-section #about-h1-div #about-h1 #icon {
-  padding: 0 1rem;
-  width: 100px;
+  font-size: 4.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 #about-section #about-h1-div #element-div {
   padding: 1rem;
   font-size: 4rem;
-  color: orange;
 }
 #about-section #intro-div {
   font-size: 1.9rem;
-  margin-right: 4rem;
 }
 #about-section #read-more {
   margin-top: 3rem;
@@ -407,6 +405,7 @@ header #hero-center #hero-canvas-div {
 }
 
 #contact-section {
+  text-align: center;
   min-height: 89vh;
   font-size: 1.9rem;
   padding: 2rem;
@@ -544,6 +543,6 @@ footer {
 @media screen and (max-width: 320px) {
   #name-text {
     border: 1px solid red;
-    font-size: clamp(4rem, 45vmin, 23rem);
+    font-size: clamp(4rem, 45vmin, 22rem);
   }
 }/*# sourceMappingURL=style.css.map */

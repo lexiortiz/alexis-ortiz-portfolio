@@ -34,7 +34,7 @@ header {
     hsl(273deg 35% 10%) 90%,
     hsl(274deg 38% 11%) 100%
   );
-  padding: 2rem;
+  padding: 0 2rem;
 
   #top-nav {
     font-size: 2.2rem;
@@ -209,15 +209,13 @@ header {
     .fancy-div {
       // width: 100%;
       @include display-row;
+      justify-content: center;
       // display: none;
 
-      .twinkleIcon {
-        // padding: 3rem;
-      }
-
       .line {
-        margin: 3rem;
+        width: 100%;
         @include line;
+        margin: 0 3rem;
       }
     }
   }
@@ -231,13 +229,10 @@ header {
     .fancy-div {
       @include display-row;
 
-      .line {
-        margin: 3rem;
-        @include line;
-      }
-
       .twinkleIcon {
         padding: 3rem;
+        font-size: 2rem;
+        color: $cultured-faded;
       }
     }
 
@@ -276,36 +271,37 @@ header {
     hsl(264deg 61% 17%) 90%,
     hsl(262deg 63% 18%) 100%
   );
-  padding: 2rem;
 
   .work-desc {
-    font-size: 2.2rem;
-    font-weight: 400;
     letter-spacing: 1px;
     margin: 6rem;
-    padding: 2rem;
-  }
-
-  .center {
     text-align: center;
-  }
+    color: $cultured-faded;
+    font-size: 2.4rem;
 
-  .left {
-    text-align: left;
-  }
+    span {
+      display: block;
+      font-family: $display-font;
+    }
 
-  .right {
-    text-align: right;
+    p {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
   }
 
   .cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    padding: 0 6rem;
+    margin-bottom: 3rem;
 
-    .card {
-      padding: 3rem;
+    .card {      
+      a {
+        text-decoration: none;
+        color: $cultured;
+      }
 
       .project-header {
         text-align: center;
@@ -323,25 +319,37 @@ header {
       }
 
       .project-preview {
-        border-top: 1px solid $cultured-faded;
-        padding-top: 1rem;
-        border-bottom: 1px solid $cultured-faded;
-        padding-bottom: 1rem;
-        margin: 1rem -3rem;
+        border: 1px solid $cultured-faded;
+        border-radius: 20px;
+        padding: 1rem;
+        margin: 1rem;
+
+        .project-img {
+          border-radius: 10px;
+        }
       }
     }
 
-    // #project3-container {
-    //   border-bottom: 1.5px solid gray;
-    // }
+    .card:hover {
+      .project-preview {
+        border: 1px solid transparent;
+      }
+
+      .project-img {
+        border: 1px solid transparent;
+        border-radius: 50%;
+      }
+    }
   }
 }
 
 #about-section {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
   min-height: 99vh;
-  font-size: 1.9rem;
-  padding: 2rem;
-  padding-top: 4rem;
+  font-size: 2rem;
+  padding: 6rem;
   background-image: linear-gradient(
     180deg,
     hsl(262deg 63% 18%) 0%,
@@ -363,25 +371,22 @@ header {
 
     #about-h1 {
       font-family: $heading-font;
-      @include display-row;
-      font-size: 6rem;
-      letter-spacing: 2px;
-
-      #icon {
-        padding: 0 1rem;
-        width: 100px;
-      }
+      font-size: 4.2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 500;
     }
+
     #element-div {
       padding: 1rem;
       font-size: 4rem;
-      color: orange;
     }
   }
+
   #intro-div {
     font-size: 1.9rem;
-    margin-right: 4rem;
   }
+  
   #read-more {
     margin-top: 3rem;
     @include nav-button;
@@ -393,6 +398,7 @@ header {
 }
 
 #contact-section {
+  text-align: center;
   min-height: 89vh;
   font-size: 1.9rem;
   padding: 2rem;
@@ -479,18 +485,18 @@ footer {
   font-size: 1.8rem;
   padding: 2rem 0;
   background-image: linear-gradient(
-  180deg,
-  hsl(250deg 83% 26%) 0%,
-  hsl(250deg 83% 25%) 11%,
-  hsl(250deg 82% 24%) 22%,
-  hsl(250deg 81% 23%) 33%,
-  hsl(250deg 81% 22%) 44%,
-  hsl(250deg 79% 21%) 56%,
-  hsl(250deg 78% 20%) 67%,
-  hsl(251deg 77% 19%) 78%,
-  hsl(251deg 75% 17%) 89%,
-  hsl(251deg 72% 16%) 100%
-);
+    180deg,
+    hsl(250deg 83% 26%) 0%,
+    hsl(250deg 83% 25%) 11%,
+    hsl(250deg 82% 24%) 22%,
+    hsl(250deg 81% 23%) 33%,
+    hsl(250deg 81% 22%) 44%,
+    hsl(250deg 79% 21%) 56%,
+    hsl(250deg 78% 20%) 67%,
+    hsl(251deg 77% 19%) 78%,
+    hsl(251deg 75% 17%) 89%,
+    hsl(251deg 72% 16%) 100%
+  );
 }
 
 /* Add animation (fade in the popup) */
@@ -559,6 +565,15 @@ footer {
 @media screen and (max-width: 320px) {
   #name-text {
     border: 1px solid red;
-    font-size: clamp(4rem, 45vmin, 23rem);
+    font-size: clamp(4rem, 45vmin, 22rem);
   }
 }
+
+// @media screen and (min-width: 900px) {
+//   .hero-name {
+//     font-size: clamp(16rem, 50vmin, 16rem);
+//     letter-spacing: 3px;
+//     font-weight: 500;
+//     color: #f8f6f4;
+//   }
+// }
