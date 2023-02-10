@@ -386,7 +386,7 @@ header {
   #about-copy-sect {
     padding: 1rem 0;
 
-    .right {
+    .center {
       text-align: center;
       color: $cultured-faded;
       font-size: 1.7rem;
@@ -449,9 +449,17 @@ header {
 
     #intro-div {
       font-size: 1.9rem;
-      text-align: left;
+      text-align: center;
       font-weight: 500;
       color: $cultured-faded;
+      padding-right: 1rem;
+      
+
+      .left {
+        text-align: left;
+        // padding-right: 1rem;
+        padding-bottom: 2rem;
+      }
     }
 
     .read-more-btn-div {

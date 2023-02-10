@@ -390,7 +390,7 @@ header #hero-feature #hero-canvas-div {
 #about-section #about-copy-sect {
   padding: 1rem 0;
 }
-#about-section #about-copy-sect .right {
+#about-section #about-copy-sect .center {
   text-align: center;
   color: rgba(247, 245, 243, 0.8);
   font-size: 1.7rem;
@@ -441,9 +441,14 @@ header #hero-feature #hero-canvas-div {
 }
 #about-section #about-copy-sect #intro-div {
   font-size: 1.9rem;
-  text-align: left;
+  text-align: center;
   font-weight: 500;
   color: rgba(247, 245, 243, 0.8);
+  padding-right: 1rem;
+}
+#about-section #about-copy-sect #intro-div .left {
+  text-align: left;
+  padding-bottom: 2rem;
 }
 #about-section #about-copy-sect .read-more-btn-div {
   display: flex;
