@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Alexis Ortiz Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,30 +41,12 @@
     <script src="Javascript/sketch.js"></script>
     <header id="header-section">
       <nav id="top-nav">
-        <div class="popup" onclick="showPhoneNumber()">
-          <p class="hero-info">CALL</p>
-          <span class="popupNumber" id="popNum">
-            <strong>LET'S TALK BUSINESS</strong> <br />
-            Don't hesitate to get in touch.<br />
-            If you cannot reach me, please <br />
-            leave a voice or text message and <br />
-            you'll hear from me soon. <br />
-            <a href="tel:470-737-5829" class="c-info">
-              <h1 class="c-info-num">+1(470) 737-5829</h1>
-            </a>
-          </span>
+        <div onclick="window.location.href='#contact-section';">
+          <p class="hero-info contactButton">CALL</p>
         </div>
         <!-- <p>✧</p> -->
-        <div class="popup" onclick="showEmail()">
-          <p class="hero-info">E-MAIL</p>
-          <span class="popupEmail" id="popMail">
-            <strong>DELIVER A MESSAGE</strong> <br />
-            I'm always ready to build <br />something beautiful together. <br />
-            Let's discuss potential opportunities. <br />
-            <a href="mailto:alexisortiz.dev@gmail.com" class="c-info">
-              <h1 class="c-info-mail">alexisortiz.dev@gmail.com</h1>
-            </a>
-          </span>
+        <div onclick="window.location.href='#contact-section';">
+          <p class="hero-info contactButton">E-MAIL</p>
         </div>
         <!-- <p>✧</p> -->
         <div id="menu-div" class="popup" onclick="showMenu()">
@@ -76,23 +60,32 @@
                 close
                 </span></p>
             </div> -->
-            <!-- <section id="header-text">
-              <h1>ALEXIS ORTIZ</h1>
-              <p>FRONT END DEVELOPER</p>
-            </section> -->
+            <section id="header-text">
+              <img
+                src="Assets/SVGs/hero-twinkle.svg"
+                class="heroTwinkle"
+                alt="SVG of a line with a diamond shape in the middle."
+              />
+            </section>
             <ul class="nav-list">
               <li class="nav-item">
                 <button class="nav-button">
-                  ABOUT<span class="arrow-icon"
-                    ><i class="fa-solid fa-arrow-right"></i
-                  ></span>
+                  ABOUT
+                  <img
+                    src="Assets/SVGs/sharp-arrow.svg"
+                    class="sharpArrowSvg"
+                    alt="Icon of a large arrow shape."
+                  />
                 </button>
               </li>
               <li class="nav-item">
                 <button class="nav-button">
-                  WORK<span class="arrow-icon"
-                    ><i class="fa-solid fa-arrow-right"></i
-                  ></span>
+                  WORK
+                  <img
+                    src="Assets/SVGs/sharp-arrow.svg"
+                    class="sharpArrowSvg"
+                    alt="Icon of a large arrow shape."
+                  />
                 </button>
               </li>
               <li class="nav-item">
@@ -100,9 +93,12 @@
                   class="nav-button"
                   onclick="window.location.href='#contact-section';"
                 >
-                  CONTACT<span class="arrow-icon"
-                    ><i class="fa-solid fa-arrow-right"></i
-                  ></span>
+                  CONTACT
+                  <img
+                    src="Assets/SVGs/sharp-arrow.svg"
+                    class="sharpArrowSvg"
+                    alt="Icon of a large arrow shape."
+                  />
                 </button>
               </li>
             </ul>
@@ -174,6 +170,7 @@
               </a>
             </div>
           </div>
+          <!-- 
           <div id="project2-container" class="card">
             <div class="project-header">
               <a href="" class="project-link">
@@ -187,11 +184,12 @@
               </a>
             </div>
           </div>
+          -->
         </section>
       </section>
       <section id="about-section">
         <section id="about-copy-sect">
-          <p class="center">ARE YOU LOOKING FOR A <br/>WORLD BUILDER?</p>
+          <p class="center">ARE YOU LOOKING FOR A <br />WORLD BUILDER?</p>
           <div class="left">
             I'M YOUR GAL
             <!-- <img
@@ -205,7 +203,14 @@
           </div>
           <div id="intro-div">
             <p class="left">
-              I craft creative digital solutions that bring ideas to life. I'm passionate about developing efficient, intuitive, and user-friendly platforms that have a lasting impact. I take great pride in my drive to continuously improve and innovate, exploring exciting new ways to create engaging user experiences with HTML, CSS, and JavaScript. I'm also passionate about enhancing web usability. I believe the web is a great tool for communication and education, and should be accessible to everyone.
+              I craft creative digital solutions that bring ideas to life. I'm
+              passionate about developing efficient, intuitive, and
+              user-friendly platforms that have a lasting impact. I take great
+              pride in my drive to continuously improve and innovate, exploring
+              exciting new ways to create engaging user experiences with HTML,
+              CSS, and JavaScript. I'm also passionate about enhancing web
+              usability. I believe the web is a great tool for communication and
+              education, and should be accessible to everyone.
             </p>
             <div class="read-more-btn-div">
               <a><p id="read-more" class="main-button">Read more.</p></a>
@@ -222,10 +227,9 @@
           <!-- <img src="./Assets/SVGs/smiley.svg" class="element-icon" /> -->
         </section>
         <p id="contact-desc">
-          Dignissim diam quis enim lobortis scelerisque. Vivamus arcu felis
-          bibendum ut tristique et egestas. Lectus nulla at volutpat diam ut
-          venenatis tellus. Eu augue ut lectus arcu. Sagittis nisl rhoncus
-          mattis rhoncus urna neque.
+          If you're interested in collaborating, I'm open to new ideas and
+          confident that, together, we can create something extraordinary. Don't
+          hesitate to reach out.
         </p>
         <nav id="all-contact-info">
           <ul id="bottom-info">

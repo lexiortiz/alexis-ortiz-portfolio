@@ -1,0 +1,60 @@
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 796px) {
+  #top-nav {
+    font-size: 2rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactButton {
+    display: none;
+  }
+
+  .name-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-name {
+    font-size: 7rem;
+    margin: auto;
+  }
+
+  #hero-role {
+    display: none;
+  }
+
+  #about-h1-div {
+    border: 4em red solid;
+  }
+
+  #contact-socials {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 45vh;
+  }
+
+  .social-link {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 35em) {
+  .hero-name {
+    font-size: 8rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #f8f6f4;
+  }
+
+  .about-h1 {
+    font-size: 8rem;
+  }
+}

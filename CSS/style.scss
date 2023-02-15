@@ -1,12 +1,13 @@
+@import "queries";
 @import "variables";
 @import "mixins";
 @import "reset";
 @import "menu.css";
 @import "font-imports";
+@import "queries.css";
 
 body {
   font-family: $display-font;
-  // ** Will Change **
   background-color: $xiketic;
   color: $cultured;
 
@@ -65,78 +66,63 @@ header {
       cursor: pointer;
     }
 
-    .popup .popupNumber {
-      background: rgba(21, 17, 24, 0.2);
-      box-shadow: 0 8px 32px 0 hsla(274, 85%, 34%, 0.37);
-      backdrop-filter: blur(25.5px);
-      -webkit-backdrop-filter: blur(10.5px);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      white-space: nowrap;
-      visibility: hidden;
-      border-radius: 8px;
-      padding: 3rem;
-      position: absolute;
-      z-index: 1;
-      top: 125%;
-      left: 2px;
+    // .popup .popupNumber {
+    //   @include glass-container;
+    //   white-space: nowrap;
+    //   visibility: hidden;
+    //   border-radius: 8px;
+    //   padding: 3rem;
+    //   position: absolute;
+    //   z-index: 1;
+    //   top: 125%;
+    //   left: 2px;
 
-      .c-info {
-        color: $cultured;
-        text-decoration: none;
+    //   .c-info {
+    //     color: $cultured;
+    //     text-decoration: none;
 
-        .c-info-num {
-          font-weight: 600;
-        }
-      }
+    //     .c-info-num {
+    //       font-weight: 600;
+    //     }
+    //   }
 
-      .c-info:hover {
-        @include nav-button-hover;
-        font-weight: 500;
-      }
-    }
+    //   .c-info:hover {
+    //     @include nav-button-hover;
+    //     font-weight: 500;
+    //   }
+    // }
 
-    .popup .popupEmail {
-      background: rgba(21, 17, 24, 0.2);
-      box-shadow: 0 8px 32px 0 #610da05e;
-      backdrop-filter: blur(25.5px);
-      -webkit-backdrop-filter: blur(10.5px);
-      border-radius: 10px;
-      border: 1px solid #ffffff2e;
-      white-space: nowrap;
-      visibility: hidden;
-      border-radius: 8px;
-      padding: 3rem;
-      position: absolute;
-      z-index: 1;
-      top: 140%;
-      left: -180%;
+    // .popup .popupEmail {
+    //   @include glass-container;
+    //   white-space: nowrap;
+    //   visibility: hidden;
+    //   border-radius: 8px;
+    //   padding: 3rem;
+    //   position: absolute;
+    //   z-index: 1;
+    //   top: 140%;
+    //   left: -180%;
 
-      .c-info {
-        color: $cultured;
-        text-decoration: none;
+    //   .c-info {
+    //     color: $cultured;
+    //     text-decoration: none;
 
-        .c-info-mail {
-          font-weight: 600;
-        }
-      }
+    //     .c-info-mail {
+    //       font-weight: 600;
+    //     }
+    //   }
 
-      .c-info:hover {
-        @include nav-button-hover;
-        font-weight: 500;
-      }
-    }
+    //   .c-info:hover {
+    //     @include nav-button-hover;
+    //     font-weight: 500;
+    //   }
+    // }
 
     .popup .popupMenu {
       @include display-column;
       min-width: 500px;
       height: 75vh;
-      background: rgba(21, 17, 24, 0.2);
-      box-shadow: 0 0 22px 0 #610da05e;
-      backdrop-filter: blur(65.5px);
-      -webkit-backdrop-filter: blur(10.5px);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
+      @include glass-container;
       white-space: nowrap;
       visibility: hidden;
       border-radius: 8px;
@@ -146,6 +132,16 @@ header {
       top: 125%;
       right: 0;
       cursor: crosshair;
+
+      .sharpArrowSvg {
+        width: 6rem;
+      }
+
+      .nav-button:hover {
+        .sharpArrowSvg {
+          opacity: 0.6;
+        }
+      }
     }
 
     /* Toggle this class when clicking on the popup container (hide and show the popup) */
@@ -166,8 +162,6 @@ header {
     text-align: center;
     padding: 0 1rem;
     margin: -2rem 0;
-    font-size: 7.9rem;
-    font-stretch: ultra-expanded;
     letter-spacing: 3px;
     font-weight: 500;
     color: #f8f6f4;
@@ -175,8 +169,7 @@ header {
   }
 
   #hero-scroll {
-    // border: 1px solid $cultured;
-    overflow: hidden;
+    // overflow: hidden;
     // display: none;
     margin: 0 $spacing;
     padding: 3rem;
@@ -187,8 +180,8 @@ header {
       text-align: center;
       font-weight: 400;
       letter-spacing: 3px;
-      font-size: 2.6rem;
-      white-space: nowrap;
+      // font-size: clamp(1rem, 2.5vw, 2rem); 
+      // white-space: wrap;
       background-color: $cultured;
       background-size: 100%;
       --bg-size: 300%;
@@ -202,9 +195,9 @@ header {
         )
         0 0 / var(--bg-size) 80%;
       color: transparent;
-      -webkit-background-clip: text;
-      animation: move-bg 12s infinite linear reverse;
+      -webkit-background-clip: text; 
       background-clip: text;
+      animation: move-bg 12s infinite linear reverse;
     }
 
     .icon-img {
@@ -269,7 +262,7 @@ header {
 #work-section {
   @include display-column;
   font-size: 1.9rem;
-  min-height: 99vh;
+  min-height: 75vh;
   background-image: linear-gradient(
     180deg,
     hsl(274deg 38% 11%) 0%,
@@ -343,12 +336,16 @@ header {
 
       .project-preview {
         margin: 2rem 0;
+        .project-img {
+          border-radius: 10px;
+        }
       }
     }
 
     .card:hover {
       .project-img {
         border-radius: 50%;
+        border: 0.5rem solid #a166cc;
       }
     }
 
@@ -367,20 +364,20 @@ header {
 
 #about-section {
   font-size: 2rem;
+  min-height: 65vh;
   padding: 0 6rem;
   background-image: linear-gradient(
     180deg,
     hsl(262deg 63% 18%) 0%,
-    hsl(261deg 65% 19%) 10%,
-    hsl(260deg 66% 20%) 20%,
-    hsl(259deg 68% 21%) 30%,
-    hsl(258deg 71% 22%) 40%,
-    hsl(257deg 72% 23%) 50%,
-    hsl(256deg 74% 24%) 60%,
-    hsl(256deg 76% 26%) 70%,
-    hsl(255deg 79% 28%) 80%,
-    hsl(254deg 80% 30%) 90%,
-    hsl(254deg 83% 31%) 100%
+    hsl(262deg 61% 17%) 11%,
+    hsl(263deg 58% 17%) 22%,
+    hsl(263deg 56% 16%) 33%,
+    hsl(264deg 54% 15%) 44%,
+    hsl(265deg 51% 15%) 56%,
+    hsl(266deg 49% 14%) 67%,
+    hsl(266deg 47% 13%) 78%,
+    hsl(266deg 44% 13%) 89%,
+    hsl(266deg 41% 12%) 100%
   );
 
   #about-copy-sect {
@@ -425,25 +422,9 @@ header {
 
       .about-h1 {
         font-family: $special-font;
-        font-size: 13rem;
         text-transform: uppercase;
         font-weight: 500;
         background-color: $cultured;
-        background-size: 100%;
-        --bg-size: 300%;
-        --color-one: hsl(256, 40%, 84%);
-        --color-two: hsla(0, 0%, 98%, 0.8);
-        background: linear-gradient(
-            90deg,
-            var(--color-one),
-            var(--color-two),
-            var(--color-one)
-          )
-          0 0 / var(--bg-size) 80%;
-        color: transparent;
-        -webkit-background-clip: text;
-        animation: move-bg 12s infinite linear reverse;
-        background-clip: text;
       }
     }
 
@@ -453,7 +434,7 @@ header {
       font-weight: 500;
       color: $cultured-faded;
       padding-right: 1rem;
-      
+
       .left {
         text-align: left;
         // padding-right: 1rem;
@@ -479,22 +460,20 @@ header {
 
 #contact-section {
   padding: 0 6rem;
-  min-height: 89vh;
+  min-height: 65vh;
   font-size: 1.9rem;
   background-image: linear-gradient(
     180deg,
-    hsl(254deg 83% 31%) 0%,
-    hsl(253deg 84% 34%) 9%,
-    hsl(253deg 86% 36%) 18%,
-    hsl(252deg 87% 39%) 27%,
-    hsl(252deg 88% 40%) 36%,
-    hsl(252deg 88% 38%) 45%,
-    hsl(251deg 87% 36%) 55%,
-    hsl(251deg 86% 34%) 64%,
-    hsl(251deg 85% 32%) 73%,
-    hsl(251deg 84% 30%) 82%,
-    hsl(250deg 85% 28%) 91%,
-    hsl(250deg 84% 26%) 100%
+    hsl(266deg 41% 12%) 0%,
+    hsl(264deg 41% 12%) 11%,
+    hsl(262deg 41% 12%) 22%,
+    hsl(262deg 41% 12%) 33%,
+    hsl(259deg 41% 12%) 44%,
+    hsl(257deg 41% 12%) 56%,
+    hsl(254deg 41% 12%) 67%,
+    hsl(254deg 41% 12%) 78%,
+    hsl(252deg 41% 12%) 89%,
+    hsl(250deg 41% 12%) 100%
   );
 
   #contact-feat-sect {
@@ -573,22 +552,10 @@ header {
 
 footer {
   text-align: center;
-  color: gray;
+  color: $cultured-faded;
   font-size: 1.8rem;
   padding: 2rem 0;
-  background-image: linear-gradient(
-    180deg,
-    hsl(250deg 83% 26%) 0%,
-    hsl(250deg 83% 25%) 11%,
-    hsl(250deg 82% 24%) 22%,
-    hsl(250deg 81% 23%) 33%,
-    hsl(250deg 81% 22%) 44%,
-    hsl(250deg 79% 21%) 56%,
-    hsl(250deg 78% 20%) 67%,
-    hsl(251deg 77% 19%) 78%,
-    hsl(251deg 75% 17%) 89%,
-    hsl(251deg 72% 16%) 100%
-  );
+  background: #16122b;
 }
 
 /* Add animation (fade in the popup) */
@@ -653,47 +620,3 @@ footer {
     }
   }
 }
-
-/* MEDIA QUERIES */
-
-// Phone Media Query
-@media screen and (max-width: 320px) {
-  #name-text {
-    border: 1px solid red;
-    font-size: clamp(4rem, 45vmin, 22rem);
-  }
-}
-
-// // Desktop Media Query
-// @media screen and (min-width: 900px) {
-//   .hero-name {
-//     font-size: clamp(16rem, 50vmin, 16rem);
-//     letter-spacing: 3px;
-//     font-weight: 500;
-//     color: #f8f6f4;
-//   }
-
-//   #work-section {
-//     clear: both;
-//   }
-
-//   #about-section {
-//     padding: 6rem;
-//     clear: both;
-
-//     #about-copy-sect {
-//       float: left;
-//       width: 50%;
-//     }
-
-//     #about-feat-sect {
-//       float: left;
-//       width: 50%;
-//       border: 1px solid red;
-//     }
-//   }
-
-//   #contact-section {
-//     clear: both;
-//   }
-// }

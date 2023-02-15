@@ -82,9 +82,14 @@
   letter-spacing: 8px;
 }
 
-// @mixin hero-gradient {
-
-// }
+@mixin glass-container {
+  background: #15111833;
+  box-shadow: 0 4px 24px 0 hsla(274, 86%, 22%, 0.3);
+  backdrop-filter: blur(25.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.103);
+}
 
 @mixin hero-role-animation {
   -moz-transform: translateX(100%);

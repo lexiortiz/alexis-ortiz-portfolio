@@ -1,31 +1,4 @@
 /* ** MAIN MENU ** */
-/* #menu-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 3rem;
-    margin-right: 1rem;
-    color: #fffdfb;
-} */
-
-.menu-line {
-    width: 100%;
-    margin-right: 3rem;
-    height: 1px;
-}
-
-/* #header-text h1 {
-    letter-spacing: 2px;
-    font-weight: 700;
-    font-size: 4.2rem;
-}
-
-#header-text p {
-    font-size: 2.4rem;
-    font-weight: 600;
-    color: hsla(30, 20%, 96%, 0.895);
-} */
 
 .nav-list {
     color: #F8F6F4;
@@ -35,36 +8,32 @@
 }
 
 .nav-item {
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 6px;
 }
 
 .nav-item:hover {
-    font-weight: 500;
     cursor: pointer;
 }
 
 .nav-button {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     background-color: transparent;
     border: none;
     color: #F8F6F4;
-    cursor: pointer;
-    font-size: 5.6rem;
+    font-size: 6rem;
     padding: 0;
+    cursor: pointer;
 }
 
 .nav-button:hover {
-    background-color: #fffdfb;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     --bg-size: 200%;
-    --color-one: hsla(262, 72%, 50%, 0.943);
-    --color-two: hsla(215, 40%, 94%, 0.829);
-    --color-three: rgba(75, 11, 178, 0.833);
+    --color-one: #A166CC;
+    --color-two: #EAEFF6D3;
+    --color-three: #660EAAB3;
     background: linear-gradient(90deg,
             var(--color-one),
             var(--color-two),
@@ -72,14 +41,8 @@
             var(--color-one)) 0 0 / var(--bg-size) 80%;
     color: transparent;
     -webkit-background-clip: text;
-    animation: move-bg 12s infinite linear reverse;
+    animation: move-bg 10s infinite linear reverse;
     background-clip: text;
-    text-shadow: 0px 0px 2px hsla(236, 63%, 33%, 0.17);
-}
-
-.arrow-icon {
-    transform: rotate(-45deg);
-    color: hsla(30, 22%, 96%, 0.9);
 }
 
 .social-item:after {
@@ -100,8 +63,8 @@
 .social-item:hover:after,
 .social-item:focus:after {
     width: 100%;
-    background: hsla(30, 22%, 96%, 0.8);
-    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+    background: #F7F5F3CC;
+    box-shadow: 0px 0px 2px #660EAAB3;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -117,7 +80,6 @@
 }
 
 .social-item {
-    /* margin: 1rem; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -125,11 +87,8 @@
     color: #FFFDFB;
     text-decoration: none;
     padding: 4px 12px;
-    /* border: 1px solid hsla(30, 22%, 96%, 0.8);
-    border-radius: 120px; */
 }
 
 .social-item:hover {
-    /* font-weight: 500; */
-    text-shadow: 0px 0px 2px hsla(251, 72%, 50%, 0.943);
+    text-shadow: 0px 0px 2px #660EAAB3;
 }
