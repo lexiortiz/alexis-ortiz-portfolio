@@ -1,60 +1,8 @@
-/* MEDIA QUERIES */
-@import "menu.css";
-@import "queries.css";
-@media screen and (max-width: 796px) {
-  #top-nav {
-    font-size: 1rem;
-    padding: 0;
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .contactButton {
-    display: none;
-  }
-  .name-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .hero-name {
-    font-size: 7rem;
-    margin: auto;
-  }
-  /* #hero-role {
-    display: none;
-  } */
-  #about-h1-div {
-    border: 1px red solid;
-  }
-  #contact-socials {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 45vh;
-  }
-  .social-link {
-    font-size: 1em;
-  }
-}
-@media screen and (min-width: 35em) {
-  .hero-name {
-    font-size: 8rem;
-    letter-spacing: 3px;
-    font-weight: 500;
-    color: #f8f6f4;
-  }
-  .about-h1 {
-    font-size: 8rem;
-  }
-}
 /*
   Building this reset from Josh Comeau's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
+@import "menu.css";
 *,
 *::before,
 *::after {
@@ -149,7 +97,6 @@ header #top-nav {
   font-size: 2rem;
   padding: 2rem 4rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   /* Popup container */
   /* Toggle this class when clicking on the popup container (hide and show the popup) */
@@ -189,26 +136,29 @@ header #top-nav .popup .popupMenu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 30vw;
-  height: 75vh;
+  max-width: 50vw;
+  max-height: 75vh;
   background: rgba(21, 17, 24, 0.2);
   box-shadow: 0 4px 24px 0 hsla(274deg, 86%, 22%, 0.3);
   backdrop-filter: blur(25.5px);
   -webkit-backdrop-filter: blur(10.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.103);
-  white-space: nowrap;
   visibility: hidden;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 3rem;
   position: absolute;
   z-index: 1;
   top: 125%;
-  right: 0;
+  right: -3rem;
   cursor: crosshair;
+}
+header #top-nav .popup .popupMenu .heroTwinkle {
+  opacity: 0.9;
 }
 header #top-nav .popup .popupMenu .sharpArrowSvg {
   width: 6rem;
+  opacity: 0.9;
 }
 header #top-nav .popup .popupMenu .nav-button:hover .sharpArrowSvg {
   opacity: 0.6;
@@ -219,7 +169,6 @@ header #top-nav .popup .show {
 }
 header .name-div {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   justify-content: center;
   font-family: "Eureka Endeavour";
@@ -261,7 +210,6 @@ header #hero-scroll .icon-img {
 }
 header #hero-scroll .fancy-div {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   justify-content: center;
 }
@@ -286,7 +234,6 @@ header #hero-feature .icon-img {
 }
 header #hero-feature .fancy-div {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 header #hero-feature .fancy-div .twinkleIcon {
@@ -319,7 +266,6 @@ header #hero-feature #hero-canvas-div {
   margin: 4rem 6rem;
   text-align: center;
   color: rgba(247, 245, 243, 0.8);
-  font-size: 2.4rem;
 }
 #work-section .work-desc .center-icon {
   margin: 2rem auto;
@@ -547,7 +493,6 @@ header #hero-feature #hero-canvas-div {
 #contact-section #all-contact-info #bottom-socials {
   padding-top: 3rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -586,5 +531,141 @@ footer {
     to {
       background-position: var(--bg-size) 0;
     }
+  }
+}
+/* MEDIA QUERIES */
+/* MEDIA QUERIES FOR LARGE PHONES */
+@media screen and (max-width: 796px) {
+  #top-nav {
+    font-size: 1rem;
+    padding: 0;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .popup .popupMenu {
+    min-width: 90vw;
+    max-height: 75vh;
+    right: -3rem;
+  }
+  #social-nav {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .nav-button {
+    font-size: 5.5rem;
+    padding: 1rem;
+  }
+  .sharpArrowSvg {
+    width: 3rem;
+  }
+  .name-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero-name {
+    font-size: 7rem;
+    margin: auto;
+  }
+  .work-desc {
+    font-size: 2.4rem;
+  }
+  #about-h1-div {
+    margin-bottom: -0.15rem;
+  }
+  #about-h1-div .about-h1 {
+    font-size: 12rem;
+  }
+  #contact-socials {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 45vh;
+  }
+  .social-link {
+    font-size: 1em;
+  }
+}
+/* MEDIA QUERIES FOR TABLET AND DESKTOP */
+@media screen and (min-width: 35em) {
+  #top-nav {
+    justify-content: space-between;
+  }
+  .hero-name {
+    font-size: 8rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #f8f6f4;
+  }
+  .work-desc {
+    font-size: 2.4rem;
+  }
+  #about-h1-div {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  #about-h1-div .element-icon {
+    margin: auto;
+    padding: 0;
+    max-width: 2vw;
+  }
+  #about-h1-div .about-h1 {
+    font-size: 10rem;
+  }
+}
+/* MEDIA QUERIES FOR SMALL PHONES */
+@media screen and (max-width: 425px) {
+  #top-nav {
+    justify-content: flex-end;
+  }
+  .contactButton {
+    display: none;
+  }
+  .nav-item {
+    letter-spacing: 1px;
+  }
+  .nav-button {
+    font-size: 4.5rem;
+    padding: 0;
+  }
+  .sharpArrowSvg {
+    max-width: 3rem;
+  }
+  #social-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .work-desc {
+    font-size: 2rem;
+  }
+  #about-h1-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 0 -2rem;
+  }
+  #about-h1-div .element-icon {
+    padding: 0;
+    max-width: 1vw;
+    margin: 0 auto;
+  }
+  #about-h1-div .about-h1 {
+    font-size: 15vh;
+    padding: 0;
+  }
+  #bottom-socials {
+    padding-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,4 @@
 /* ** MAIN MENU ** */
-
 .nav-list {
     color: #F8F6F4;
     text-decoration: none;
@@ -30,10 +29,11 @@
 }
 
 .nav-button:hover {
+    font-weight: 800;
     --bg-size: 200%;
     --color-one: #A166CC;
     --color-two: #EAEFF6D3;
-    --color-three: #660EAAB3;
+    --color-three: #7736aab3;
     background: linear-gradient(90deg,
             var(--color-one),
             var(--color-two),
