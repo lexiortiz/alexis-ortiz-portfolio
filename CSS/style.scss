@@ -120,7 +120,7 @@ header {
 
     .popup .popupMenu {
       @include display-column;
-      min-width: 500px;
+      min-width: 30vw;
       height: 75vh;
       @include glass-container;
       white-space: nowrap;
@@ -421,10 +421,10 @@ header {
       }
 
       .about-h1 {
+        font-size: clamp(4rem, 20vh, 12rem);
         font-family: $special-font;
         text-transform: uppercase;
         font-weight: 500;
-        background-color: $cultured;
       }
     }
 
@@ -618,5 +618,61 @@ footer {
     to {
       background-position: var(--bg-size) 0;
     }
+  }
+}
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES FOR PHONE */
+@media screen and (max-width: 796px) {
+  #top-nav {
+    font-size: 1rem;
+    padding: 0;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contactButton {
+    display: none;
+  }
+
+  .name-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-name {
+    font-size: 7rem;
+    margin: auto;
+  }
+
+
+  #contact-socials {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 45vh;
+  }
+
+  .social-link {
+    font-size: 1em;
+  }
+}
+
+/* MEDIA QUERIES FOR TABLET AND DESKTOP */
+@media screen and (min-width: 35em) {
+  .hero-name {
+    font-size: 8rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #f8f6f4;
+  }
+
+  .about-h1 {
+    font-size: 8rem;
   }
 }
