@@ -135,7 +135,7 @@ header {
       }
 
       .sharpArrowSvg {
-        width: 6rem;
+        width: 5.2rem;
         opacity: 0.9;
       }
 
@@ -282,7 +282,7 @@ header {
 
   .work-desc {
     letter-spacing: 1px;
-    margin: 4rem 6rem;
+    margin: 3rem 6rem;
     text-align: center;
     color: $cultured-faded;
 
@@ -308,6 +308,7 @@ header {
     justify-content: space-between;
     flex-direction: column;
     margin: 6rem;
+    padding-top: 3rem;
 
     .card {
       display: flex;
@@ -346,7 +347,7 @@ header {
     .card:hover {
       .project-img {
         border-radius: 50%;
-        border: 0.5rem solid #a166cc;
+        border: 0.5rem solid #8149E0;
       }
     }
 
@@ -367,6 +368,7 @@ header {
   font-size: 2rem;
   min-height: 65vh;
   padding: 0 6rem;
+  padding-top: 3em;
   background-image: linear-gradient(
     180deg,
     hsl(262deg 63% 18%) 0%,
@@ -697,8 +699,13 @@ footer {
     justify-content: space-between;
   }
 
+  #social-nav {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
   .hero-name {
-    font-size: 8rem;
+    font-size: 9rem;
     letter-spacing: 3px;
     font-weight: 500;
     color: #f8f6f4;

@@ -90,7 +90,7 @@ header {
   min-height: 100vh;
   color: #F8F6F4;
   font-size: 1.9rem;
-  background-image: linear-gradient(180deg, hsl(270deg, 15%, 5%) 0%, hsl(276deg, 17%, 6%) 10%, hsl(270deg, 19%, 6%) 20%, hsl(276deg, 14%, 7%) 30%, hsl(270deg, 16%, 7%) 40%, hsl(274deg, 17%, 8%) 50%, hsl(276deg, 23%, 9%) 60%, hsl(275deg, 26%, 9%) 70%, hsl(276deg, 31%, 10%) 80%, hsl(273deg, 35%, 10%) 90%, hsl(274deg, 38%, 11%) 100%);
+  background-image: linear-gradient(180deg, hsl(270, 15%, 5%) 0%, hsl(276, 17%, 6%) 10%, hsl(270, 19%, 6%) 20%, hsl(276, 14%, 7%) 30%, hsl(270, 16%, 7%) 40%, hsl(274, 17%, 8%) 50%, hsl(276, 23%, 9%) 60%, hsl(275, 26%, 9%) 70%, hsl(276, 31%, 10%) 80%, hsl(273, 35%, 10%) 90%, hsl(274, 38%, 11%) 100%);
   padding: 0 2rem;
 }
 header #top-nav {
@@ -139,7 +139,7 @@ header #top-nav .popup .popupMenu {
   max-width: 50vw;
   max-height: 75vh;
   background: rgba(21, 17, 24, 0.2);
-  box-shadow: 0 4px 24px 0 hsla(274deg, 86%, 22%, 0.3);
+  box-shadow: 0 4px 24px 0 hsla(274, 86%, 22%, 0.3);
   backdrop-filter: blur(25.5px);
   -webkit-backdrop-filter: blur(10.5px);
   border-radius: 10px;
@@ -157,7 +157,7 @@ header #top-nav .popup .popupMenu .heroTwinkle {
   opacity: 0.9;
 }
 header #top-nav .popup .popupMenu .sharpArrowSvg {
-  width: 6rem;
+  width: 5.2rem;
   opacity: 0.9;
 }
 header #top-nav .popup .popupMenu .nav-button:hover .sharpArrowSvg {
@@ -180,7 +180,7 @@ header .hero-name {
   letter-spacing: 3px;
   font-weight: 500;
   color: #f8f6f4;
-  text-shadow: 0px 0px 2px hsla(0deg, 0%, 95%, 0.6);
+  text-shadow: 0px 0px 2px hsla(0, 0%, 95%, 0.6);
 }
 header #hero-scroll {
   margin: 0 3rem;
@@ -259,11 +259,11 @@ header #hero-feature #hero-canvas-div {
   justify-content: space-between;
   font-size: 1.9rem;
   min-height: 75vh;
-  background-image: linear-gradient(180deg, hsl(274deg, 38%, 11%) 0%, hsl(274deg, 40%, 11%) 10%, hsl(275deg, 43%, 12%) 20%, hsl(273deg, 46%, 12%) 30%, hsl(275deg, 48%, 13%) 40%, hsl(274deg, 50%, 13%) 50%, hsl(271deg, 53%, 14%) 60%, hsl(269deg, 56%, 15%) 70%, hsl(266deg, 59%, 16%) 80%, hsl(264deg, 61%, 17%) 90%, hsl(262deg, 63%, 18%) 100%);
+  background-image: linear-gradient(180deg, hsl(274, 38%, 11%) 0%, hsl(274, 40%, 11%) 10%, hsl(275, 43%, 12%) 20%, hsl(273, 46%, 12%) 30%, hsl(275, 48%, 13%) 40%, hsl(274, 50%, 13%) 50%, hsl(271, 53%, 14%) 60%, hsl(269, 56%, 15%) 70%, hsl(266, 59%, 16%) 80%, hsl(264, 61%, 17%) 90%, hsl(262, 63%, 18%) 100%);
 }
 #work-section .work-desc {
   letter-spacing: 1px;
-  margin: 4rem 6rem;
+  margin: 3rem 6rem;
   text-align: center;
   color: rgba(247, 245, 243, 0.8);
 }
@@ -285,6 +285,7 @@ header #hero-feature #hero-canvas-div {
   justify-content: space-between;
   flex-direction: column;
   margin: 6rem;
+  padding-top: 3rem;
 }
 #work-section .cards .card {
   display: flex;
@@ -315,7 +316,7 @@ header #hero-feature #hero-canvas-div {
 }
 #work-section .cards .card:hover .project-img {
   border-radius: 50%;
-  border: 0.5rem solid #a166cc;
+  border: 0.5rem solid #8149E0;
 }
 #work-section .cards #project1-container {
   border-top: 1px solid rgba(191, 188, 186, 0.8);
@@ -331,7 +332,8 @@ header #hero-feature #hero-canvas-div {
   font-size: 2rem;
   min-height: 65vh;
   padding: 0 6rem;
-  background-image: linear-gradient(180deg, hsl(262deg, 63%, 18%) 0%, hsl(262deg, 61%, 17%) 11%, hsl(263deg, 58%, 17%) 22%, hsl(263deg, 56%, 16%) 33%, hsl(264deg, 54%, 15%) 44%, hsl(265deg, 51%, 15%) 56%, hsl(266deg, 49%, 14%) 67%, hsl(266deg, 47%, 13%) 78%, hsl(266deg, 44%, 13%) 89%, hsl(266deg, 41%, 12%) 100%);
+  padding-top: 3em;
+  background-image: linear-gradient(180deg, hsl(262, 63%, 18%) 0%, hsl(262, 61%, 17%) 11%, hsl(263, 58%, 17%) 22%, hsl(263, 56%, 16%) 33%, hsl(264, 54%, 15%) 44%, hsl(265, 51%, 15%) 56%, hsl(266, 49%, 14%) 67%, hsl(266, 47%, 13%) 78%, hsl(266, 44%, 13%) 89%, hsl(266, 41%, 12%) 100%);
 }
 #about-section #about-copy-sect {
   padding: 1rem 0;
@@ -412,7 +414,7 @@ header #hero-feature #hero-canvas-div {
   padding: 0 6rem;
   min-height: 65vh;
   font-size: 1.9rem;
-  background-image: linear-gradient(180deg, hsl(266deg, 41%, 12%) 0%, hsl(264deg, 41%, 12%) 11%, hsl(262deg, 41%, 12%) 22%, hsl(262deg, 41%, 12%) 33%, hsl(259deg, 41%, 12%) 44%, hsl(257deg, 41%, 12%) 56%, hsl(254deg, 41%, 12%) 67%, hsl(254deg, 41%, 12%) 78%, hsl(252deg, 41%, 12%) 89%, hsl(250deg, 41%, 12%) 100%);
+  background-image: linear-gradient(180deg, hsl(266, 41%, 12%) 0%, hsl(264, 41%, 12%) 11%, hsl(262, 41%, 12%) 22%, hsl(262, 41%, 12%) 33%, hsl(259, 41%, 12%) 44%, hsl(257, 41%, 12%) 56%, hsl(254, 41%, 12%) 67%, hsl(254, 41%, 12%) 78%, hsl(252, 41%, 12%) 89%, hsl(250, 41%, 12%) 100%);
 }
 #contact-section #contact-feat-sect #contact-title {
   font-family: "Fira Sans Condensed", sans-serif;
@@ -595,8 +597,12 @@ footer {
   #top-nav {
     justify-content: space-between;
   }
+  #social-nav {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
   .hero-name {
-    font-size: 8rem;
+    font-size: 9rem;
     letter-spacing: 3px;
     font-weight: 500;
     color: #f8f6f4;
